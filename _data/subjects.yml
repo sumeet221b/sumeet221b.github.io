@@ -1,0 +1,30 @@
+- algorithms:
+  title: "Algorithms"
+  thumbnail: algorithms.png
+- theory-of-computation:
+  title: "Theory of Computation"
+  thumbnail: theory-of-computation.png
+- discrete-maths:
+  title: "Discrete Maths"
+  thumbnail: discrete-mathematics.png
+- digital-logic:
+  title: "Digital Logic"
+  thumbnail: digital-logic.png
+- compiler-design:
+  title: "Compiler Design"
+  thumbnail: compiler-design.png
+- aptitude:
+  title: "Aptitude"
+  thumbnail: aptitude.png
+- databases:
+  title: Databases
+  thumbnail: databases.png
+- computer-networks:
+  title: "Computer Networks"
+  thumbnail: computer-networks.png
+- programming-and-data-structures:
+  title: "Programming and Data Structures"
+  thumbnail: programming-and-data-structures.png
+- computer-organizations-and-architecture:
+  title: "Computer Organizations and Architecture"
+  thumbnail: computer-organization-and-architecture.png

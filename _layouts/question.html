@@ -1,0 +1,13 @@
+---
+layout: two-cols
+---
+
+<header class="mb-4">
+    <h1 class="fw-bolder mb-1">GATE {{ page.year }} Set-{{ page.set }} Q{{ page.qno }}</h1>
+</header>
+
+<section class="mb-5">
+    {% assign question=page %}
+    {% include question_box.html %}
+
+</section>
