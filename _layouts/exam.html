@@ -23,7 +23,6 @@ layout: two-cols
     {% include question_box.html %}
     {% endif %}
     {% endfor %}
-
 </section>
 
 <!-- Comments section-->
@@ -32,102 +31,119 @@ layout: two-cols
 {% endcomment %}
 <script>
 
-        selectedAnswers = {};
+    selectedAnswers = {};
+    MCQ_OPTIONS = ['a', 'b', 'c', 'd']
 
-        const options = document.getElementById('questions');
-        options.addEventListener('click', (event) => {
+    function updateNumericAnswer(id, value) {
+        data = id.split("-");
+        submittedAnswers = data[4].split(",");
+        if (submittedAnswers[0] <= value && value <= submittedAnswers[1]) {
+            selectedAnswers[data[0] + "-" + data[1] + "-" + data[2] + "-" + data[3] + "-" + data[4]] = true;
+        } else {
+            selectedAnswers[data[0] + "-" + data[1] + "-" + data[2] + "-" + data[3] + "-" + data[4]] = false;
+        }
 
-            // Check if only button is clicked
-            const isButton = event.target.nodeName === 'BUTTON';
-            if (!isButton) {
-                return;
+        if (value != "") {
+            document.getElementById(data[0] + "-" + data[1] + "-" + data[2] + "-" + data[3] + "-" + data[4] + "-submit-answer").classList.remove("disabled");
+        } else {
+            document.getElementById(data[0] + "-" + data[1] + "-" + data[2] + "-" + data[3] + "-" + data[4] + "-submit-answer").classList.add("disabled");
+        }
+    }
+
+    const options = document.getElementById('questions');
+
+    options.addEventListener('click', (event) => {
+
+        // Check if only button is clicked
+        const isButton = event.target.nodeName === 'BUTTON';
+        if (!isButton) {
+            return;
+        }
+
+        dataFromButton = event.target.id.split("-");
+
+        if (event.target.classList.contains("submit-answer")) {
+
+            qbox = document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]);
+
+            if (dataFromButton[3] == "mcq" || dataFromButton[3] == "msq") {
+
+                selectedAnswer = selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]];
+                if (selectedAnswer == undefined) {
+                    return;
+                }
+            
+            } else if (dataFromButton[3] == "nat") {
+                inputAnswer = document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-input").value;
+                natAnswerRange = dataFromButton[4].split(",");
+                if (inputAnswer >= natAnswerRange[0] && inputAnswer <= natAnswerRange[1]) {
+                    selectedAnswer = true;
+                } else {
+                    selectedAnswer = false;
+                }
             }
 
-            dataFromButton = event.target.id.split("-");
-            mcq_options = ['a', 'b', 'c', 'd'];
+            if (selectedAnswer == false) {
+                qbox.classList.add("border", "border-4", "border-danger");
+                qbox.classList.remove("border-success");
+            } else {
+                qbox.classList.add("border", "border-4", "border-success");
+                qbox.classList.remove("border-danger");
+            }
 
-            if (event.target.classList.contains("submit-answer")) {
+        } else if (event.target.classList.contains("clear-answer")) {
+            delete selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]];
+            document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]).classList.remove("border", "border-4", "border-success", "border-danger");
+            document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-submit-answer").classList.add("disabled");
+        } else {
 
-                if (dataFromButton[3] == "mcq" || dataFromButton[3] == "msq") {
-                    selectedAnswer = selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2]];
-                    if (selectedAnswer.length == dataFromButton[4].length) {
-                        for (var i = 0; i < dataFromButton[4].length; i++) {
-                            if (!selectedAnswer.includes(dataFromButton[4].charAt(i))) {
-                                document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]).classList.remove("border-success")
-                                document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]).classList.add("border", "border-5", "border-danger")
-                                return;
-                            }
-                        }
-                        document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]).classList.remove("border-danger")
-                        document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]).classList.add("border", "border-5", "border-success")
-                    } else {
-                        document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]).classList.remove("border-success")
-                        document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]).classList.add("border", "border-5", "border-danger")
-                        return;
+            if (dataFromButton[3] == "mcq") {
+
+                if (dataFromButton[4] == dataFromButton[5]) {
+                    answer = true;
+                } else {
+                    answer = false;
+                }
+                selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]] = answer;
+                
+                // Remove all active.
+                MCQ_OPTIONS.forEach((e) => {
+                    document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + '-' + e).classList.remove('active');
+                });
+                // Set current pressed button as active.
+                event.target.classList.toggle('active');
+
+            } else if (dataFromButton[3] == "msq") {
+
+                event.target.classList.toggle('active');
+
+                // Get all selected answers.
+                selectedOptions = "";
+                MCQ_OPTIONS.forEach((e) => {
+                    if (document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + '-' + e).classList.contains('active')) {
+                        selectedOptions += e;
                     }
-                    
-                } 
-
-            } else if (event.target.classList.contains("clear-answer")) {
-
-                // Remove all selected options
-                mcq_options.forEach((e, i) => {
-                    document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-" + e).classList.remove("active");
                 });
 
-                // Remove selected answer
-                delete selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2]];
-
-                // Remove border
-                document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]).classList.remove("border", "border-5", "border-danger")
-                document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]).classList.remove("border", "border-5", "border-success")
-            } else {
-
-                if (dataFromButton[3] == "mcq") {
-
-                    // Set active class
-                    mcq_options.forEach((e, i) => {
-                        if (dataFromButton[5] == e) {
-                            if (event.target.classList.contains("active")) {
-                                delete selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2]];
-                                document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-" + e).classList.remove("active");
-                            } else {
-                                selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2]] = e
-                                document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-" + e).classList.add("active")
-                            }
-                        } else {
-                            document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-" + e).classList.remove("active");
-                        }
-                    });
-                } else if (dataFromButton[3] == "msq") {
-                    if (event.target.classList.contains("active")) {
-                        
-                        // delete selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2]];
-                        event.target.classList.remove("active");
-                        if (dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] in selectedAnswers) {
-                            var tmp = selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2]];
-                            selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2]] = tmp.replace(dataFromButton[5], "");
-                        }
-                        
-                    } else {
-                        event.target.classList.add("active");
-
-                        if (dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] in selectedAnswers) {
-                            tmp = selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2]];
-                            selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2]] = tmp + dataFromButton[5];
-                        } else {
-                            selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2]] = dataFromButton[5];
-                        }
+                // Check if answer is wrong or right.
+                answer = true;
+                MCQ_OPTIONS.forEach((e) => {
+                    if (selectedOptions.includes(e) ^ dataFromButton[4].includes(e) == 1) {
+                        answer = false; 
                     }
-                }
-
-                if (dataFromButton[0]+"-"+dataFromButton[1]+"-"+dataFromButton[2] in selectedAnswers) {
-                    document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-submit-answer").classList.remove("disabled");
-                } else {
-                    document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-submit-answer").classList.add("disabled");
-                }
+                });
+                selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]] = answer;
             }
-        });
+
+            // Enable/Disable submit answer button.
+            if (dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] in selectedAnswers) {
+                document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-submit-answer").classList.remove("disabled");
+            } else {
+                document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-submit-answer").classList.add("disabled");
+            }
+            
+        }
+    });
 
 
 </script>
