@@ -1,0 +1,5006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>
+
+        
+        GATE CS 2022 | 
+        
+        GATE ComputerScience
+
+    </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Katex -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                // • rendering keys, e.g.:
+                throwOnError : false
+            });
+        });
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a class="navbar-brand" href="/">GATE ComputerScience</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                        <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
+                        <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                        <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                        <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <section class="py-4">
+    <div class="container px-4 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-3">
+
+                <!-- Author Name -->
+                <!-- <div class="d-flex align-items-center mt-lg-5 mb-4">
+                    <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                        alt="..." />
+                    <div class="ms-3">
+                        <div class="fw-bold">Valerie Luna</div>
+                        <div class="text-muted">News, Business</div>
+                    </div>
+                </div> -->
+
+                <!-- Topics -->
+                <!-- <div class="card mt-lg-5 mb-4 shadow-sm mb-5 bg-body border-0">
+                    <div class="card-body bg-light rounded bg-dark">
+                        <ul class="list-unstyled mb-0 text-end">
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </ul>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="col-lg-9">
+                <header class="mb-4">
+    <h1 class="fw-bolder mb-1">GATE CS 2022 - Set 1</h1>
+</header>
+
+<section class="mb-5" id="questions">
+    
+
+    <h2>General Aptitude Section</h2><br>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-1-mcq-d"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>The <strong>__</strong><strong>__</strong> is too high for it to be considered <strong>__</strong><strong>__</strong>_.</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-1-mcq-d-a"
+                class="list-group-item list-group-item-action">
+                
+                fair / fare
+                
+            </button>
+            <button
+                id="2022-1-1-mcq-d-b"
+                class="list-group-item list-group-item-action">
+                
+                faer / fair
+                
+            </button>
+            <button
+                id="2022-1-1-mcq-d-c"
+                class="list-group-item list-group-item-action">
+                
+                fare / fare
+                
+            </button>
+            <button
+                id="2022-1-1-mcq-d-d"
+                class="list-group-item list-group-item-action">
+                
+                fare / fair
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-1-mcq-d-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-1-mcq-d-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/general-aptitude/1.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-2-mcq-c"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 2</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>A function y(x) is defined in the interval [0, 1] on the x-axis as</p>
+
+\[y(x) = \left\{\begin{matrix} 2&amp; \text{if} &amp; 0 \leq x &lt; \frac{1}{3} \\ 3&amp; \text{if}&amp; \frac{1}{3} \leq x &lt; \frac{3}{4} &amp; \\ 1 &amp; \text{if} &amp; \frac{3}{4} \leq x \leq 1&amp; \end{matrix}\right.\]
+
+<p>Which one of the following is the area under the curve for the interval[0, 1] on the x-axis?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-2-mcq-c-a"
+                class="list-group-item list-group-item-action">
+                
+                5/6
+                
+            </button>
+            <button
+                id="2022-1-2-mcq-c-b"
+                class="list-group-item list-group-item-action">
+                
+                6/5
+                
+            </button>
+            <button
+                id="2022-1-2-mcq-c-c"
+                class="list-group-item list-group-item-action">
+                
+                13/6
+                
+            </button>
+            <button
+                id="2022-1-2-mcq-c-d"
+                class="list-group-item list-group-item-action">
+                
+                6/13
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-2-mcq-c-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-2-mcq-c-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/general-aptitude/2.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-3-mcq-d"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 3</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Let r be a root of the equation $x^{2} + 2x + 6 = 0.$</p>
+
+<p>Then the value of the expression $(r+2) (r+3) (r+4) (r+5)$ is</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-3-mcq-d-a"
+                class="list-group-item list-group-item-action">
+                
+                51
+                
+            </button>
+            <button
+                id="2022-1-3-mcq-d-b"
+                class="list-group-item list-group-item-action">
+                
+                -51
+                
+            </button>
+            <button
+                id="2022-1-3-mcq-d-c"
+                class="list-group-item list-group-item-action">
+                
+                126
+                
+            </button>
+            <button
+                id="2022-1-3-mcq-d-d"
+                class="list-group-item list-group-item-action">
+                
+                -126
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-3-mcq-d-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-3-mcq-d-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/general-aptitude/3.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-4-mcq-a"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 4</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Given below are four statements.</p>
+
+<p>Statement 1: All students are inquisitive.</p>
+
+<p>Statement 2: Some students are inquisitive.</p>
+
+<p>Statement 3: No student is inquisitive.</p>
+
+<p>Statement 4: Some students are not inquisitive.</p>
+
+<p>From the given four statements, find the two statements that CANNOT BE TRUE simultaneously, assuming that there is at least one student in the class.</p>
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-4-mcq-a-a"
+                class="list-group-item list-group-item-action">
+                
+                Statement 1 and Statement 3
+                
+            </button>
+            <button
+                id="2022-1-4-mcq-a-b"
+                class="list-group-item list-group-item-action">
+                
+                Statement 1 and Statement 2
+                
+            </button>
+            <button
+                id="2022-1-4-mcq-a-c"
+                class="list-group-item list-group-item-action">
+                
+                Statement 2 and Statement 4
+                
+            </button>
+            <button
+                id="2022-1-4-mcq-a-d"
+                class="list-group-item list-group-item-action">
+                
+                Statement 3 and Statement 4
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-4-mcq-a-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-4-mcq-a-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/general-aptitude/4.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-5-mcq-b"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 5</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>A palindrome is a word that reads the same forwards and backwards. In a game of words, a player has the following two plates painted with letters.</p>
+
+<p><img src="/assets/images/gate-exams/2022-1-1.png" alt="GATE 2022 Set 1 Aptitude Q5" /></p>
+
+<p>From the additional plates given in the options, which one of the combinations of additional plates would allow the player to construct a five-letter palindrome. The player should use all the five plates exactly once. The plates can be rotated in their plane.</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-5-mcq-b-a"
+                class="list-group-item list-group-item-action">
+                
+                <img src="/assets/images/gate-exams/2022-1-2.png"></img>
+                
+            </button>
+            <button
+                id="2022-1-5-mcq-b-b"
+                class="list-group-item list-group-item-action">
+                
+                <img src="/assets/images/gate-exams/2022-1-3.png"></img>
+                
+            </button>
+            <button
+                id="2022-1-5-mcq-b-c"
+                class="list-group-item list-group-item-action">
+                
+                <img src="/assets/images/gate-exams/2022-1-4.png"></img>
+                
+            </button>
+            <button
+                id="2022-1-5-mcq-b-d"
+                class="list-group-item list-group-item-action">
+                
+                <img src="/assets/images/gate-exams/2022-1-5.png"></img>
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-5-mcq-b-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-5-mcq-b-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/general-aptitude/5.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-6-mcq-b"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 6</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 2</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Some people believe that “what gets measured, improves”. Some others believe that “what gets measured, gets gamed”. One possible reason for the difference in the beliefs is the work culture in organizations. In organizations with good work culture, metrics help improve outcomes. However, the same metrics are counterproductive in organizations with poor work culture.</p>
+
+<p>Which one of the following is the correct logical inference based on the information in the above passage?</p>
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-6-mcq-b-a"
+                class="list-group-item list-group-item-action">
+                
+                Metrics are useful in organizations with poor work culture
+                
+            </button>
+            <button
+                id="2022-1-6-mcq-b-b"
+                class="list-group-item list-group-item-action">
+                
+                Metrics are useful in organizations with good work culture
+                
+            </button>
+            <button
+                id="2022-1-6-mcq-b-c"
+                class="list-group-item list-group-item-action">
+                
+                Metrics are always counterproductive in organizations with good work culture
+                
+            </button>
+            <button
+                id="2022-1-6-mcq-b-d"
+                class="list-group-item list-group-item-action">
+                
+                Metrics are never useful in organizations with good work culture
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-6-mcq-b-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-6-mcq-b-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/general-aptitude/6.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-7-mcq-d"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 7</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>In a recently conducted national entrance test, boys constituted 65% of those who appeared for the test. Girls constituted the remaining candidates and they accounted for 60% of the qualified candidates.</p>
+
+<p>Which one of the following is the correct logical inference based on the information provided in the above passage?</p>
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-7-mcq-d-a"
+                class="list-group-item list-group-item-action">
+                
+                Equal number of boys and girls qualified
+                
+            </button>
+            <button
+                id="2022-1-7-mcq-d-b"
+                class="list-group-item list-group-item-action">
+                
+                Equal number of boys and girls appeared for the test
+                
+            </button>
+            <button
+                id="2022-1-7-mcq-d-c"
+                class="list-group-item list-group-item-action">
+                
+                The number of boys who appeared for the test is less than the number of girls who appeared
+                
+            </button>
+            <button
+                id="2022-1-7-mcq-d-d"
+                class="list-group-item list-group-item-action">
+                
+                The number of boys who qualified the test is less than the number of girls who qualified
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-7-mcq-d-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-7-mcq-d-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/general-aptitude/7.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-8-mcq-d"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 8</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 2</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>A box contains five balls of same size and shape. Three of them are green coloured balls and two of them are orange coloured balls. Balls are drawn from the box one at a time. If a green ball is drawn, it is not replaced. If an orange ball is drawn, it is replaced with another orange ball.</p>
+
+<p>First ball is drawn. What is the probability of getting an orange ball in the next draw?</p>
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-8-mcq-d-a"
+                class="list-group-item list-group-item-action">
+                
+                1/2
+                
+            </button>
+            <button
+                id="2022-1-8-mcq-d-b"
+                class="list-group-item list-group-item-action">
+                
+                8/25
+                
+            </button>
+            <button
+                id="2022-1-8-mcq-d-c"
+                class="list-group-item list-group-item-action">
+                
+                19/50
+                
+            </button>
+            <button
+                id="2022-1-8-mcq-d-d"
+                class="list-group-item list-group-item-action">
+                
+                23/50
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-8-mcq-d-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-8-mcq-d-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/general-aptitude/8.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-9-mcq-b"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 9</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 2</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>The corners and mid-points of the sides of a triangle are named using the distinct letters P, Q, R, S, T and U but not necessarily in the same order. Consider the following statements:</p>
+<ul>
+  <li>The line joining P and R is parallel to the line joining Q and S.</li>
+  <li>P is placed on the side opposite to corner T.</li>
+  <li>S and U cannot be placed on the same side.</li>
+</ul>
+
+<p>Which one of the following statements is correct based on the above information?</p>
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-9-mcq-b-a"
+                class="list-group-item list-group-item-action">
+                
+                P cannot be placed at a corner
+                
+            </button>
+            <button
+                id="2022-1-9-mcq-b-b"
+                class="list-group-item list-group-item-action">
+                
+                S cannot be placed at a corner
+                
+            </button>
+            <button
+                id="2022-1-9-mcq-b-c"
+                class="list-group-item list-group-item-action">
+                
+                U cannot be placed at a mid-point
+                
+            </button>
+            <button
+                id="2022-1-9-mcq-b-d"
+                class="list-group-item list-group-item-action">
+                
+                R cannot be placed at a corner
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-9-mcq-b-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-9-mcq-b-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/general-aptitude/9.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-10-mcq-d"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 10</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>A plot of land must be divided between four families. They want their individual plots to be similar in shape, not necessarily equal in area. The land has equally spaced poles, marked as dots in the below figure. Two ropes, R1 and R2 are already present and cannot be moved.</p>
+
+<p>What is the least number of additional straight ropes needed to create the desired plots? A single rope can pass through three poles that are aligned in a straight line.</p>
+
+<p><img src="/assets/images/gate-exams/2022-1-6.png" alt="GATE 2022 Set 1 Aptitude Q10" /></p>
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-10-mcq-d-a"
+                class="list-group-item list-group-item-action">
+                
+                2
+                
+            </button>
+            <button
+                id="2022-1-10-mcq-d-b"
+                class="list-group-item list-group-item-action">
+                
+                4
+                
+            </button>
+            <button
+                id="2022-1-10-mcq-d-c"
+                class="list-group-item list-group-item-action">
+                
+                5
+                
+            </button>
+            <button
+                id="2022-1-10-mcq-d-d"
+                class="list-group-item list-group-item-action">
+                
+                3
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-10-mcq-d-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-10-mcq-d-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/general-aptitude/10.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <h2>Technical Section</h2><br>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-1-mcq-a"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Which one of the following statements is TRUE for all positive functions f(n)?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-1-mcq-a-a"
+                class="list-group-item list-group-item-action">
+                
+                $f(n^{2}) = \theta (f(n)^{2})$, when f(n) is a polynomial
+                
+            </button>
+            <button
+                id="2022-1-1-mcq-a-b"
+                class="list-group-item list-group-item-action">
+                
+                $f(n^{2}) = o (f(n)^{2})$
+                
+            </button>
+            <button
+                id="2022-1-1-mcq-a-c"
+                class="list-group-item list-group-item-action">
+                
+                $f(n^{2}) = O (f(n)^{2})$ when f(n) is an exponential function
+                
+            </button>
+            <button
+                id="2022-1-1-mcq-a-d"
+                class="list-group-item list-group-item-action">
+                
+                $f(n^{2}) = \Omega (f(n)^{2})$
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-1-mcq-a-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-1-mcq-a-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/1.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-2-mcq-d"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 2</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Which one of the following regular expressions correctly represents the language of the finite automaton given below?</p>
+
+<p><img src="/assets/images/gate-exams/2022-1-7.png" alt="GATE 2022 Set 1 Q1" /></p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-2-mcq-d-a"
+                class="list-group-item list-group-item-action">
+                
+                ab*bab* + ba*aba*
+                
+            </button>
+            <button
+                id="2022-1-2-mcq-d-b"
+                class="list-group-item list-group-item-action">
+                
+                (ab*b)*ab* + (ba*a)*ba*
+                
+            </button>
+            <button
+                id="2022-1-2-mcq-d-c"
+                class="list-group-item list-group-item-action">
+                
+                (ab*b+ba*a)*(a*+b*)
+                
+            </button>
+            <button
+                id="2022-1-2-mcq-d-d"
+                class="list-group-item list-group-item-action">
+                
+                (ba*a+ab*b)*(ab* + ba*)
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-2-mcq-d-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-2-mcq-d-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/2.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-3-mcq-d"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 3</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Which one of the following statements is TRUE</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-3-mcq-d-a"
+                class="list-group-item list-group-item-action">
+                
+                TheLALR(1) parser for a grammar G cannot have reduce-reduce conflict if the LR(1) parser for G does not have reduce-reduce conflict.
+                
+            </button>
+            <button
+                id="2022-1-3-mcq-d-b"
+                class="list-group-item list-group-item-action">
+                
+                Symbol table is accessed only during the lexical analysis phase.
+                
+            </button>
+            <button
+                id="2022-1-3-mcq-d-c"
+                class="list-group-item list-group-item-action">
+                
+                Data flow analysis is necessary for run-time memory management.
+                
+            </button>
+            <button
+                id="2022-1-3-mcq-d-d"
+                class="list-group-item list-group-item-action">
+                
+                LR(1) parsing is sufficient for deterministic context-free languages.
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-3-mcq-d-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-3-mcq-d-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/3.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-4-mcq-a"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 4</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>In a relational data model, which one of the following statements is TRUE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-4-mcq-a-a"
+                class="list-group-item list-group-item-action">
+                
+                A relation with only two attributes is always in BCNF.
+                
+            </button>
+            <button
+                id="2022-1-4-mcq-a-b"
+                class="list-group-item list-group-item-action">
+                
+                A relation with only two attributes is always in  BCNF.
+                
+            </button>
+            <button
+                id="2022-1-4-mcq-a-c"
+                class="list-group-item list-group-item-action">
+                
+                Every relation has at least one non-prime attribute.
+                
+            </button>
+            <button
+                id="2022-1-4-mcq-a-d"
+                class="list-group-item list-group-item-action">
+                
+                BCNF  decompositions preserve functional dependencies.
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-4-mcq-a-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-4-mcq-a-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/4.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-5-mcq-a"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 5</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the problem of reversing a singly linked list. To take an example, given the linked list below,</p>
+
+<p><img src="/assets/images/gate-exams/2022-1-8.jpg" alt="GATE 2022 Set 1 Q5" /></p>
+
+<p>the reversed linked list should look like</p>
+
+<p><img src="/assets/images/gate-exams/2022-1-9.jpg" alt="GATE 2022 Set 1 Q5" /></p>
+
+<p>Which one of the following statements is TRUE about the time complexity of algorithms that solve the above problem in O(1) space?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-5-mcq-a-a"
+                class="list-group-item list-group-item-action">
+                
+                The best algorithm for the problem takes θ(n) time in the worst case.
+                
+            </button>
+            <button
+                id="2022-1-5-mcq-a-b"
+                class="list-group-item list-group-item-action">
+                
+                The best algorithm for the problem takes θ(n log n) time in the worst case.
+                
+            </button>
+            <button
+                id="2022-1-5-mcq-a-c"
+                class="list-group-item list-group-item-action">
+                
+                The best algorithm for the problem takes $\theta(n^{2})$ time in the worst case.
+                
+            </button>
+            <button
+                id="2022-1-5-mcq-a-d"
+                class="list-group-item list-group-item-action">
+                
+                It is not possible to reverse a singly linked list in O(1) space.
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-5-mcq-a-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-5-mcq-a-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/5.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-6-mcq-b"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 6</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Suppose we are given n keys, m hash table slots, and two simple uniform hash functions h1 and h2. Further, suppose our hashing scheme uses h1 for the odd keys and h2 for the even keys. What is the expected number of keys in a slot?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-6-mcq-b-a"
+                class="list-group-item list-group-item-action">
+                
+                m/n
+                
+            </button>
+            <button
+                id="2022-1-6-mcq-b-b"
+                class="list-group-item list-group-item-action">
+                
+                n/m
+                
+            </button>
+            <button
+                id="2022-1-6-mcq-b-c"
+                class="list-group-item list-group-item-action">
+                
+                2n/m
+                
+            </button>
+            <button
+                id="2022-1-6-mcq-b-d"
+                class="list-group-item list-group-item-action">
+                
+                n/2m
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-6-mcq-b-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-6-mcq-b-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/6.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-7-mcq-a"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 7</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Which one of the following facilitates transfer of bulk data from hard disk to main memory with the highest throughput?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-7-mcq-a-a"
+                class="list-group-item list-group-item-action">
+                
+                DMA based I/O transfer
+                
+            </button>
+            <button
+                id="2022-1-7-mcq-a-b"
+                class="list-group-item list-group-item-action">
+                
+                Interrupt driven I/O transfer
+                
+            </button>
+            <button
+                id="2022-1-7-mcq-a-c"
+                class="list-group-item list-group-item-action">
+                
+                Polling based I/O transfer
+                
+            </button>
+            <button
+                id="2022-1-7-mcq-a-d"
+                class="list-group-item list-group-item-action">
+                
+                Programmed I/O transfer
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-7-mcq-a-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-7-mcq-a-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/7.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-9-mcq-b"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 9</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Let R1 and R2 be two 4-bit registers that store numbers in 2’s complement form. For the operation R1+R2, which one of the following values of R1 and R2 gives an arithmetic overflow?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-9-mcq-b-a"
+                class="list-group-item list-group-item-action">
+                
+                R1 = 1011 and R2 = 1110
+                
+            </button>
+            <button
+                id="2022-1-9-mcq-b-b"
+                class="list-group-item list-group-item-action">
+                
+                R1 = 1100 and R2 = 1010
+                
+            </button>
+            <button
+                id="2022-1-9-mcq-b-c"
+                class="list-group-item list-group-item-action">
+                
+                R1 = 0011 and R2 = 0100
+                
+            </button>
+            <button
+                id="2022-1-9-mcq-b-d"
+                class="list-group-item list-group-item-action">
+                
+                R1 = 1001 and R2 = 1111
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-9-mcq-b-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-9-mcq-b-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/8.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    <div id="2022-1-9-mcq-c"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 9</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the following threads, T1, T2, and T3 executing on a single processor, synchronized using three binary semaphore variables, S1, S2, and S3, operated upon using standard wait() and signal(). The threads can be context switched in any order and at any time.</p>
+
+\[\begin{array}{|c|c|c|} \hline \text{T}_{1} &amp; \text{T}_{2} &amp; \text{T}_{3} \\\hline \text{while(true)} \{  &amp;  \text{while(true)} \{&amp; \text{while(true)} \{ \\ \text{wait(S}_{3}); &amp; \text{wait(S}_{1}); &amp; \text{wait(S}_{2}); \\   \text{print(“C”)}; &amp; \text{print(“B”)}; &amp; \text{print(“A”)}; \\  \text{signal(S}_{2}); \} &amp; \text{signal(S}_{3}); \} &amp; \text{signal(S}_{1}); \} \\\hline  \end{array}\]
+
+<p>Which initialization of the semaphores would print the sequence BCABCABCA….?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-9-mcq-c-a"
+                class="list-group-item list-group-item-action">
+                
+                S1 = 1; S2 = 1; S3 = 1
+                
+            </button>
+            <button
+                id="2022-1-9-mcq-c-b"
+                class="list-group-item list-group-item-action">
+                
+                S1 = 1; S2 = 1; S3 = 0
+                
+            </button>
+            <button
+                id="2022-1-9-mcq-c-c"
+                class="list-group-item list-group-item-action">
+                
+                S1 = 1; S2 = 0; S3 = 0
+                
+            </button>
+            <button
+                id="2022-1-9-mcq-c-d"
+                class="list-group-item list-group-item-action">
+                
+                S1 = 0; S2 = 1; S3 = 1
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-9-mcq-c-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-9-mcq-c-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/9.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="2022-1-10-mcq-c"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 10</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the following two statements with respect to the matrices Am×n , Bn×m , Cn×n and  Dn×n</p>
+
+<p>Statement 1: tr(AB) = tr(BA) 
+Statement 2: tr(CD) = tr(DC)</p>
+
+<p>where tr() represents the trace of a matrix. Which one of the following holds?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-10-mcq-c-a"
+                class="list-group-item list-group-item-action">
+                
+                Statement 1 is correct and Statement 2 is wrong.
+                
+            </button>
+            <button
+                id="2022-1-10-mcq-c-b"
+                class="list-group-item list-group-item-action">
+                
+                Statement 1 is wrong and Statement 2 is correct.
+                
+            </button>
+            <button
+                id="2022-1-10-mcq-c-c"
+                class="list-group-item list-group-item-action">
+                
+                Both Statement 1 and Statement 2 are correct.
+                
+            </button>
+            <button
+                id="2022-1-10-mcq-c-d"
+                class="list-group-item list-group-item-action">
+                
+                Both Statement 1 and Statement 2 are wrong.
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-10-mcq-c-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-10-mcq-c-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/10.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-11-mcq-d"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 11</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>What is printed by the following ANSI C program?</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
+    
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">z</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">};</span>
+    <span class="kt">int</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
+    <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+    <span class="o">*</span><span class="p">(</span><span class="o">&amp;</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+=</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="err">“</span><span class="o">%</span><span class="n">d</span><span class="p">,</span> <span class="o">%</span><span class="n">d</span><span class="p">,</span> <span class="o">%</span><span class="n">d</span><span class="err">\</span><span class="n">n</span><span class="err">”</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Statement 1: tr(AB) = tr(BA) 
+Statement 2: tr(CD) = tr(DC)</p>
+
+<p>where tr() represents the trace of a matrix. Which one of the following holds?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-11-mcq-d-a"
+                class="list-group-item list-group-item-action">
+                
+                1, 10, 11
+                
+            </button>
+            <button
+                id="2022-1-11-mcq-d-b"
+                class="list-group-item list-group-item-action">
+                
+                1, 10, 14
+                
+            </button>
+            <button
+                id="2022-1-11-mcq-d-c"
+                class="list-group-item list-group-item-action">
+                
+                10, 14, 11
+                
+            </button>
+            <button
+                id="2022-1-11-mcq-d-d"
+                class="list-group-item list-group-item-action">
+                
+                10, 10, 14
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-11-mcq-d-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-11-mcq-d-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/11.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-12-mcq-c"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 12</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider an enterprise network with two Ethernet segments, a web server and a firewall, connected via three routers as shown below.</p>
+
+<p><img src="/assets/images/gate-exams/2022-1-10.jpg" alt="GATE 2022 Set 1 Q12" /></p>
+
+<p>What is the number of subnets inside the enterprise network?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-12-mcq-c-a"
+                class="list-group-item list-group-item-action">
+                
+                3
+                
+            </button>
+            <button
+                id="2022-1-12-mcq-c-b"
+                class="list-group-item list-group-item-action">
+                
+                12
+                
+            </button>
+            <button
+                id="2022-1-12-mcq-c-c"
+                class="list-group-item list-group-item-action">
+                
+                6
+                
+            </button>
+            <button
+                id="2022-1-12-mcq-c-d"
+                class="list-group-item list-group-item-action">
+                
+                8
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-12-mcq-c-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-12-mcq-c-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/12.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-13-msq-bcd"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 13</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Which of the following statements is/are TRUE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-13-msq-bcd-a"
+                class="list-group-item list-group-item-action">
+                
+                Every subset of a recursively enumerable language is recursive.
+                
+            </button>
+            <button
+                id="2022-1-13-msq-bcd-b"
+                class="list-group-item list-group-item-action">
+                
+                If a language L and its complement L' are both recursively enumerable, then L must be recursive.
+                
+            </button>
+            <button
+                id="2022-1-13-msq-bcd-c"
+                class="list-group-item list-group-item-action">
+                
+                Complement of a context-free language must be recursive.
+                
+            </button>
+            <button
+                id="2022-1-13-msq-bcd-d"
+                class="list-group-item list-group-item-action">
+                
+                If L1 and L2 are regular, then $\textit{L}_{1} \cap \textit{L}_{2}$   must be deterministic context-free.
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-13-msq-bcd-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-13-msq-bcd-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/13.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-14-msq-abd"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 14</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Let WB and WT be two set associative cache organizations that use LRU algorithm for cache block replacement. WB is a write back cache and WT is a write through cache. Which of the following statements is/are FALSE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-14-msq-abd-a"
+                class="list-group-item list-group-item-action">
+                
+                Each cache block in WB and WT has a dirty bit
+                
+            </button>
+            <button
+                id="2022-1-14-msq-abd-b"
+                class="list-group-item list-group-item-action">
+                
+                Every write hit in WB leads to a data transfer from cache to main memory.
+                
+            </button>
+            <button
+                id="2022-1-14-msq-abd-c"
+                class="list-group-item list-group-item-action">
+                
+                Eviction of a block from WT will not lead to data transfer from cache to main memory
+                
+            </button>
+            <button
+                id="2022-1-14-msq-abd-d"
+                class="list-group-item list-group-item-action">
+                
+                A read miss in WB will never lead to eviction of a dirty block from WB
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-14-msq-abd-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-14-msq-abd-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/14.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-15-msq-ab"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 15</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the following three relations in a relational database.</p>
+
+<p>Employee(eId, Name ), Brand(bId, bName), Own(eId, bId )</p>
+
+<p>Which of the following relational algebra expressions return the set of who own all the brands?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-15-msq-ab-a"
+                class="list-group-item list-group-item-action">
+                
+                $\Pi_{eId} \left(\Pi_{eId,bId} (Own) / \Pi_{bId} (Brand) \right)$
+                
+            </button>
+            <button
+                id="2022-1-15-msq-ab-b"
+                class="list-group-item list-group-item-action">
+                
+                $\Pi_{eId} (Own) – \Pi_{eId} \left( ( \Pi_{eId} (Own) \times \Pi_{bId} (Brand)) – \Pi_{eId,bId} (Own)\right)$
+                
+            </button>
+            <button
+                id="2022-1-15-msq-ab-c"
+                class="list-group-item list-group-item-action">
+                
+                $\Pi_{eId} \left(\Pi_{eId,bId} (Own) / \Pi_{bId} (Own) \right)$
+                
+            </button>
+            <button
+                id="2022-1-15-msq-ab-d"
+                class="list-group-item list-group-item-action">
+                
+                $\Pi_{eId} \left( (\Pi_{eId}(Own) \times \Pi_{bId} (Own)) / \Pi_{bId} (Brand) \right)$
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-15-msq-ab-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-15-msq-ab-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/15.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-16-msq-ab"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 16</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Which of the following statements is/are TRUE with respect to deadlocks?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-16-msq-ab-a"
+                class="list-group-item list-group-item-action">
+                
+                Circular wait is a necessary condition for the formation of deadlock.
+                
+            </button>
+            <button
+                id="2022-1-16-msq-ab-b"
+                class="list-group-item list-group-item-action">
+                
+                In a system where each resource has more than one instance, a cycle in its wait-for graph indicates the presence of a deadlock.
+                
+            </button>
+            <button
+                id="2022-1-16-msq-ab-c"
+                class="list-group-item list-group-item-action">
+                
+                If the current allocation of resources to processes leads the system to unsafe state, then deadlock will necessarily occur.
+                
+            </button>
+            <button
+                id="2022-1-16-msq-ab-d"
+                class="list-group-item list-group-item-action">
+                
+                In the resource-allocation graph of a system, if every edge is an assignment edge, then the system is not in deadlock state.
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-16-msq-ab-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-16-msq-ab-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/16.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-17-msq-abc"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 17</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Which of the following statements is/are TRUE for a group G?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-17-msq-abc-a"
+                class="list-group-item list-group-item-action">
+                
+                If for all $x,y \in \textit{G}, \; (xy)^{2} = x^{2} y^{2},$, then G is commutative.
+                
+            </button>
+            <button
+                id="2022-1-17-msq-abc-b"
+                class="list-group-item list-group-item-action">
+                
+                If for all $x \in \textit{G}, \; x^{2} = 1,$ then G is commutative. Here, 1 is the identity element of G.
+                
+            </button>
+            <button
+                id="2022-1-17-msq-abc-c"
+                class="list-group-item list-group-item-action">
+                
+                If the order of G is 2, then G is commutative
+                
+            </button>
+            <button
+                id="2022-1-17-msq-abc-d"
+                class="list-group-item list-group-item-action">
+                
+                If G is commutative, then a subgroup of G need not be commutative
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-17-msq-abc-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-17-msq-abc-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/17.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-18-nat-509,509"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 18</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Suppose a binary search tree with 1000 distinct elements is also a complete binary tree. The tree is stored using the array representation of binary heap trees. Assuming that the array indices start with 0, the 3rd largest element of the tree is stored at index__<strong>__</strong>_____.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-18-nat-509,509-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-18-nat-509,509-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-18-nat-509,509-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/18.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-19-nat-5,5"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 19</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the augmented grammar with { + , *, (, ), id } as the set of terminals.</p>
+
+<ul>
+  <li>$S’ \rightarrow S$</li>
+  <li>$S \rightarrow S + R|R$</li>
+  <li>$R \rightarrow R^* P |P$</li>
+  <li>$P \rightarrow (S)|\text{id}$</li>
+</ul>
+
+<p>If I0 is the set of two LR(0) items {[S` -&gt; S.], [S -&gt; S. +R]}, then goto(closure(I0), +) contains exactly <strong>__</strong><em>__</em> items.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-19-nat-5,5-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-19-nat-5,5-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-19-nat-5,5-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/19.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-20-nat-36,36"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 20</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider a simple undirected graph of 10 vertices. If the graph is disconnected, then the maximum number of edges it can have is <strong>__</strong><strong>__</strong>___ .</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-20-nat-36,36-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-20-nat-36,36-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-20-nat-36,36-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/20.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-21-nat-8,8"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 21</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider a relation R(A, B, C, D, E,) with the following three functional dependencies.</p>
+
+\[AB \rightarrow C; \; BC \rightarrow D; \; C \rightarrow E;\]
+
+<p>The number of superkeys in the relation R is <strong>__</strong><strong>__</strong>__ .</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-21-nat-8,8-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-21-nat-8,8-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-21-nat-8,8-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/21.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-22-nat-7,7"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 22</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>The number of arrangements of six identical balls in three identical bins is <strong>__</strong><strong>__</strong>_ .</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-22-nat-7,7-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-22-nat-7,7-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-22-nat-7,7-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/22.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-23-nat-0.85,0.85"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 23</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>A cache memory that has a hit rate of 0.8 has an access latency 10 ns and miss penalty 100 ns. Optimization is done on the cache to reduce the miss rate. However, the optimization results in an increase of cache access latency to 15 ns, whereas the miss penalty is not affected. The minimum hit rate (rounded off to two decimal places) needed after the optimization such that it should not increase the average memory access time is <strong>__</strong><strong>__</strong>_.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-23-nat-0.85,0.85-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-23-nat-0.85,0.85-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-23-nat-0.85,0.85-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/23.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-24-nat--0.5,-0.5"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 24</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>The value of the following limit is <strong>__</strong><strong>__</strong><em>__</em>.</p>
+
+\[\lim_{x \rightarrow 0^{+}} \frac{\sqrt{x}}{1-e^{2\sqrt{x}}}\]
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-24-nat--0.5,-0.5-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-24-nat--0.5,-0.5-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-24-nat--0.5,-0.5-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/24.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-25-nat-4,4"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 25</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the resolution of the domain name www.gate.org.in by a DNS resolver. Assume that no resource records are cached anywhere across the DNS servers and that an iterative query mechanism is used in the resolution. The number of DNS query-response pairs involved in completely resolving the domain name is__<strong>__</strong>_____.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-25-nat-4,4-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-25-nat-4,4-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-25-nat-4,4-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/25.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-26-mcq-a"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 26</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Which one of the following is the closed form for the generating function of the sequence $\{ a_{n} \}_{n \geq 0}$ defined below?</p>
+
+\[a_{n} = \left\{\begin{matrix} n + 1, &amp; \text{n is odd} &amp; \\ 1, &amp; \text{otherwise} &amp; \end{matrix}\right.\]
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-26-mcq-a-a"
+                class="list-group-item list-group-item-action">
+                
+                $\frac{x(1+x^{2})}{(1-x^{2})^{2}} + \frac{1}{1-x}$
+                
+            </button>
+            <button
+                id="2022-1-26-mcq-a-b"
+                class="list-group-item list-group-item-action">
+                
+                $\frac{x(3-x^{2})}{(1-x^{2})^{2}} + \frac{1}{1-x}$
+                
+            </button>
+            <button
+                id="2022-1-26-mcq-a-c"
+                class="list-group-item list-group-item-action">
+                
+                $\frac{2x}{(1-x^{2})^{2}} + \frac{1}{1-x}$
+                
+            </button>
+            <button
+                id="2022-1-26-mcq-a-d"
+                class="list-group-item list-group-item-action">
+                
+                $\frac{x}{(1-x^{2})^{2}} + \frac{1}{1-x}$
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-26-mcq-a-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-26-mcq-a-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/26.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-27-mcq-d"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 27</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider a simple undirected unweighted graph with at least three vertices. If A is the adjacency matrix of the graph, then the number of 3-cycles in the graph is given by the trace of</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-27-mcq-d-a"
+                class="list-group-item list-group-item-action">
+                
+                $\textit{A}^{3}$
+                
+            </button>
+            <button
+                id="2022-1-27-mcq-d-b"
+                class="list-group-item list-group-item-action">
+                
+                $\textit{A}^{3}$ divided by 2
+                
+            </button>
+            <button
+                id="2022-1-27-mcq-d-c"
+                class="list-group-item list-group-item-action">
+                
+                $\textit{A}^{3}$ divided by 3
+                
+            </button>
+            <button
+                id="2022-1-27-mcq-d-d"
+                class="list-group-item list-group-item-action">
+                
+                $\textit{A}^{3}$ divided by 6
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-27-mcq-d-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-27-mcq-d-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/27.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-28-mcq-c"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 28</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Which one of the following statements is FALSE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-28-mcq-c-a"
+                class="list-group-item list-group-item-action">
+                
+                The TLB performs an associative search in parallel on all its valid entries using the page number of the incoming virtual addresses.
+                
+            </button>
+            <button
+                id="2022-1-28-mcq-c-b"
+                class="list-group-item list-group-item-action">
+                
+                If the virtual address of a word given by the CPU has a TLB hit, but the subsequent search for the word results in a cache miss, then the word will always be present in the main memory
+                
+            </button>
+            <button
+                id="2022-1-28-mcq-c-c"
+                class="list-group-item list-group-item-action">
+                
+                The memory access time using a given inverted page table is always the same for all incoming virtual addresses.
+                
+            </button>
+            <button
+                id="2022-1-28-mcq-c-d"
+                class="list-group-item list-group-item-action">
+                
+                In a system that uses hashed page tables, if two distinct virtual addresses V1 and V2 map to the same value while hashing, then the memory access time of these addresses will not be the same.
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-28-mcq-c-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-28-mcq-c-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/28.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-29-mcq-a"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 29</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Let Ri(z) and Wi(z) denote read and write operations on a data element z by a transaction Ti, respectively. Consider the schedule S with four transactions.</p>
+
+<p>$S: \; R_{4}(x) R_{2}(x) R_{3}(x)R_{1}(y) W_{1}(y) W_{2}(x) W_{3}(y) R_{4}(y)$</p>
+
+<p>Which one of the following serial schedules is conflict equivalent to S?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-29-mcq-a-a"
+                class="list-group-item list-group-item-action">
+                
+                $T_{1} \rightarrow T_{3} \rightarrow T_{4} \rightarrow T_{2}$
+                
+            </button>
+            <button
+                id="2022-1-29-mcq-a-b"
+                class="list-group-item list-group-item-action">
+                
+                $T_{1} \rightarrow T_{4} \rightarrow T_{3} \rightarrow T_{2}$
+                
+            </button>
+            <button
+                id="2022-1-29-mcq-a-c"
+                class="list-group-item list-group-item-action">
+                
+                $T_{4} \rightarrow T_{1} \rightarrow T_{3} \rightarrow T_{2}$
+                
+            </button>
+            <button
+                id="2022-1-29-mcq-a-d"
+                class="list-group-item list-group-item-action">
+                
+                $T_{3} \rightarrow T_{1} \rightarrow T_{4} \rightarrow T_{2}$
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-29-mcq-a-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-29-mcq-a-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/29.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-30-mcq-c"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 30</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider a digital display system (DDS) shown in the figure that displays the contents of register X. A 16-bit code word is used to load a word in X, either from S or from R. S is a 1024-word memory segment and R is a 32-word register file. Based on the value of mode bit M, T selects an input word to load in X. P and Q interface with the corresponding bits in the code word to choose the addressed word. Which one of the following represents the functionality of P, Q, and T?</p>
+
+<p><img src="/assets/images/gate-exams/2022-1-11.png" alt="GATE 2022 Set 1 Q30" /></p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-30-mcq-c-a"
+                class="list-group-item list-group-item-action">
+                
+                P is 10:1 multiplexer; Q is 5:1 multiplexer; T is 2:1 multiplexer
+                
+            </button>
+            <button
+                id="2022-1-30-mcq-c-b"
+                class="list-group-item list-group-item-action">
+                
+                P is $10:2^{10}$ decoder; Q is $5:2^5$ decoder; T is 2:1 encoder
+                
+            </button>
+            <button
+                id="2022-1-30-mcq-c-c"
+                class="list-group-item list-group-item-action">
+                
+                P is $10:2^{10}$ decoder; Q is $5:2^5$ decoder; T is 2:1 multiplexer
+                
+            </button>
+            <button
+                id="2022-1-30-mcq-c-d"
+                class="list-group-item list-group-item-action">
+                
+                P is 1:10 de-multiplexer; Q is 1:5 de-multiplexer; T is 2:1 multiplexer
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-30-mcq-c-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-30-mcq-c-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/30.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-31-mcq-b"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 31</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider three floating-point numbers A, B, and C stored in registers RA, RB, and RC, respectively as per IEEE-754 single-precision floating-point format. The 32-bit content stored in these registers (in hexadecimal form) is as follows.</p>
+
+\[\begin{array} {|c|c|c|} \hline \text{R}_{\text{A}} = \text{0xC1400000} &amp; \text{R}_{\text{B}} = \text{0x42100000} &amp; \text{R}_{\text{C}} = \text{0x41400000} \\\hline \end{array}\]
+
+<p>Which one of the following is FALSE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-31-mcq-b-a"
+                class="list-group-item list-group-item-action">
+                
+                A+C = 0
+                
+            </button>
+            <button
+                id="2022-1-31-mcq-b-b"
+                class="list-group-item list-group-item-action">
+                
+                C = A+B
+                
+            </button>
+            <button
+                id="2022-1-31-mcq-b-c"
+                class="list-group-item list-group-item-action">
+                
+                B = 3C
+                
+            </button>
+            <button
+                id="2022-1-31-mcq-b-d"
+                class="list-group-item list-group-item-action">
+                
+                (B-C) > 0
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-31-mcq-b-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-31-mcq-b-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/31.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-32-mcq-d"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 32</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider four processes P, Q, R, and S scheduled on a CPU as per round-robin algorithm with a time quantum of 4 units. The processes arrive in the order P, Q, R, S, all at time t = 0. There is exactly one context switch from S to Q, exactly one context switch from R to Q, and exactly two context switches from Q to R. There is no context switch from S to P. Switching to a ready process after the termination of another process is also considered a context switch. Which one of the following is NOT possible as CPU burst time (in time units) of these processes?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-32-mcq-d-a"
+                class="list-group-item list-group-item-action">
+                
+                P = 4, Q = 10, R = 6, S = 2
+                
+            </button>
+            <button
+                id="2022-1-32-mcq-d-b"
+                class="list-group-item list-group-item-action">
+                
+                P = 2, Q = 9, R = 5, S = 1
+                
+            </button>
+            <button
+                id="2022-1-32-mcq-d-c"
+                class="list-group-item list-group-item-action">
+                
+                P = 4, Q = 12, R = 5, S = 4
+                
+            </button>
+            <button
+                id="2022-1-32-mcq-d-d"
+                class="list-group-item list-group-item-action">
+                
+                P = 3, Q = 7, R = 7, S = 3
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-32-mcq-d-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-32-mcq-d-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/32.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-33-mcq-a"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 33</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>What is printed by the following ANSI C program?</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="c1"> </span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> 
+<span class="p">{</span> 
+        <span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">},</span> 
+        <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">},</span> 
+        <span class="p">{</span><span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">27</span><span class="p">}</span>
+        <span class="p">};</span> 
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> 
+    <span class="k">for</span><span class="p">(</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">){</span> 
+        <span class="k">for</span><span class="p">(</span><span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span> <span class="p">)</span> 
+                <span class="n">printf</span><span class="p">(</span><span class="s">"%d "</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="n">k</span><span class="p">]);</span> 
+        <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span> 
+    <span class="p">}</span> 
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-33-mcq-a-a"
+                class="list-group-item list-group-item-action">
+                
+                $\begin {array}{} 1 & 2 & 3 \\ 10 & 11 & 12 \\ 19 & 20 & 21 \end{array}$
+                
+            </button>
+            <button
+                id="2022-1-33-mcq-a-b"
+                class="list-group-item list-group-item-action">
+                
+                $\begin {array}{} 1 & 4 & 7 \\ 10 & 13 & 16 \\ 19 & 22 & 25 \end{array}$
+                
+            </button>
+            <button
+                id="2022-1-33-mcq-a-c"
+                class="list-group-item list-group-item-action">
+                
+                $\begin {array}{} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{array}$
+                
+            </button>
+            <button
+                id="2022-1-33-mcq-a-d"
+                class="list-group-item list-group-item-action">
+                
+                $\begin {array}{} 1 & 2 & 3 \\ 13 & 14 & 15 \\ 25 & 26 & 27 \end{array}$
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-33-mcq-a-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-33-mcq-a-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/33.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-34-mcq-a"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 34</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>What is printed by the following ANSI C program?</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="c1"> </span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[]){</span> 
+   <span class="kt">char</span> <span class="n">a</span> <span class="o">=</span> <span class="sc">'P'</span><span class="p">;</span> 
+   <span class="kt">char</span> <span class="n">b</span> <span class="o">=</span> <span class="sc">'x'</span><span class="p">;</span> 
+   <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">&amp;</span> <span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="sc">'*'</span><span class="p">;</span> 
+   <span class="kt">char</span> <span class="n">d</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">|</span> <span class="n">b</span><span class="p">)</span> <span class="o">-</span> <span class="sc">'-'</span><span class="p">;</span> 
+   <span class="kt">char</span> <span class="n">e</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">^</span> <span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="sc">'+'</span><span class="p">;</span> 
+   <span class="n">printf</span><span class="p">(</span><span class="s">"%c %c %c</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">e</span><span class="p">);</span> 
+   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
+<span class="p">}</span> 
+</code></pre></div></div>
+<p>ASCII encoding for relevant characters is given below</p>
+
+\[\begin {array}{|c|c|c|c|c|} \hline \text{A} &amp; \text{B} &amp; \text{C} &amp; \dots &amp; \text{Z} \\\hline 65 &amp; 66 &amp; 67 &amp; \dots &amp; 90 \end{array}\]
+
+\[\begin {array}{|c|c|c|c|c|} \hline \text{a} &amp; \text{b} &amp; \text{c} &amp; \dots &amp; \text{z} \\\hline 97 &amp; 98 &amp; 99 &amp; \dots &amp; 122 \end{array}\]
+
+\[\begin {array}{|c|c|c|} \hline  *  &amp; + &amp; –   \\\hline 42 &amp; 43 &amp; 45 \end{array}\]
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-34-mcq-a-a"
+                class="list-group-item list-group-item-action">
+                
+                z K S
+                
+            </button>
+            <button
+                id="2022-1-34-mcq-a-b"
+                class="list-group-item list-group-item-action">
+                
+                122 75 83
+                
+            </button>
+            <button
+                id="2022-1-34-mcq-a-c"
+                class="list-group-item list-group-item-action">
+                
+                * – +
+                
+            </button>
+            <button
+                id="2022-1-34-mcq-a-d"
+                class="list-group-item list-group-item-action">
+                
+                P x +
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-34-mcq-a-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-34-mcq-a-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/34.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-35-mcq-a"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 35</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider solving the following system of simultaneous equations using LU decomposition.</p>
+
+\[x_{1} + x_{2} – 2x_{3} = 4\]
+
+\[x_{1} + 3x_{2} – x_{3} = 7\]
+
+\[2x_{1} + x_{2} – 5x_{3} = 7\]
+
+<p>where L and U are denoted as</p>
+
+\[L = \begin{pmatrix}L_{11} &amp; 0 &amp; 0 \\ L_{21} &amp; L_{22} &amp; 0 \\ L_{31} &amp; L_{32} &amp; L_{33} \end{pmatrix} , U = \begin{pmatrix}U_{11} &amp; U_{12} &amp; U_{13} \\ 0 &amp; U_{22} &amp; U_{23} \\ 0 &amp; 0 &amp; U_{33} \end{pmatrix}\]
+
+<p>Which one of the following is the correct combination of values for L32, U33, and x1?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-35-mcq-a-a"
+                class="list-group-item list-group-item-action">
+                
+                $\textit{L}_{32}=2, \textit{U}_{33}= – \frac{1}{2}, x_{1}= – 1$
+                
+            </button>
+            <button
+                id="2022-1-35-mcq-a-b"
+                class="list-group-item list-group-item-action">
+                
+                $\textit{L}_{32}=2, \textit{U}_{33}=2, x_{1}= – 1$
+                
+            </button>
+            <button
+                id="2022-1-35-mcq-a-c"
+                class="list-group-item list-group-item-action">
+                
+                $\textit{L}_{32}= – \frac{1}{2}, \textit{U}_{33}=2, x_{1}= 0$
+                
+            </button>
+            <button
+                id="2022-1-35-mcq-a-d"
+                class="list-group-item list-group-item-action">
+                
+                $\textit{L}_{32}= – \frac{1}{2}, \textit{U}_{33}= – \frac{1}{2}, x_{1}= 0$
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-35-mcq-a-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-35-mcq-a-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/35.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-36-msq-abc"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 36</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Which of the following is/are undecidable?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-36-msq-abc-a"
+                class="list-group-item list-group-item-action">
+                
+                Given two Turing machines M1 and M2, decide if L(M1) = L(M2).
+                
+            </button>
+            <button
+                id="2022-1-36-msq-abc-b"
+                class="list-group-item list-group-item-action">
+                
+                Given a Turing machine M, decide if L(M) is regular.
+                
+            </button>
+            <button
+                id="2022-1-36-msq-abc-c"
+                class="list-group-item list-group-item-action">
+                
+                Given a Turing machine M, decide if M accepts all strings.
+                
+            </button>
+            <button
+                id="2022-1-36-msq-abc-d"
+                class="list-group-item list-group-item-action">
+                
+                Given a Turing machine M , decide if M takes more than 1073 steps on every string.
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-36-msq-abc-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-36-msq-abc-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/36.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-37-msq-bcd"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 37</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the following languages:</p>
+
+<p>$L_1 = \{ a^n wa^{n} | w \in {a,b}^{\ast}\}$</p>
+
+<p>$L_2 = \{wxw^R | w, x \in {a,b}^{*}, |w|, |x| &gt; 0 \}$</p>
+
+<p>Which of the following statements is/are FALSE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-37-msq-bcd-a"
+                class="list-group-item list-group-item-action">
+                
+                L1 is not context-free but L2 and L3 are deterministic context-free.
+                
+            </button>
+            <button
+                id="2022-1-37-msq-bcd-b"
+                class="list-group-item list-group-item-action">
+                
+                Neither L1 nor L2 is context-free.
+                
+            </button>
+            <button
+                id="2022-1-37-msq-bcd-c"
+                class="list-group-item list-group-item-action">
+                
+                L2, L3, and L2 ∩ L3 all are context-free.
+                
+            </button>
+            <button
+                id="2022-1-37-msq-bcd-d"
+                class="list-group-item list-group-item-action">
+                
+                Neither L1 nor its complement is context-free.
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-37-msq-bcd-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-37-msq-bcd-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/37.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-38-msq-abc"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 38</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the following languages:</p>
+
+<p>$L_{1} = \{ ww | w \in {a,b}^{\ast} \}$</p>
+
+<p>$L_{2} = \{a^{n} b^{n} c^{m} | m,n \geq 0 \}$</p>
+
+<p>$L_{3} = \{a^{m} b^{n} c^{n} | m,n \geq 0 \}$</p>
+
+<p>Note that R w is the reversal of the string w. Which of the following is/are TRUE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-38-msq-abc-a"
+                class="list-group-item list-group-item-action">
+                
+                L1  and L2 are regular
+                
+            </button>
+            <button
+                id="2022-1-38-msq-abc-b"
+                class="list-group-item list-group-item-action">
+                
+                L1  and L2 are context-free
+                
+            </button>
+            <button
+                id="2022-1-38-msq-abc-c"
+                class="list-group-item list-group-item-action">
+                
+                L1  is regular and L2 is context-free.
+                
+            </button>
+            <button
+                id="2022-1-38-msq-abc-d"
+                class="list-group-item list-group-item-action">
+                
+                L1  and L2 are context-free but not regular
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-38-msq-abc-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-38-msq-abc-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/38.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-39-msq-abc"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 39</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider a simple undirected weighted graph G, all of whose edge weights are distinct. Which of the following statements about the minimum spanning trees of G is/are TRUE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-39-msq-abc-a"
+                class="list-group-item list-group-item-action">
+                
+                The edge with the second smallest weight is always part of any minimum spanning tree of G .
+                
+            </button>
+            <button
+                id="2022-1-39-msq-abc-b"
+                class="list-group-item list-group-item-action">
+                
+                One or both of the edges with the third smallest and the fourth smallest weights are part of any minimum spanning tree of G .
+                
+            </button>
+            <button
+                id="2022-1-39-msq-abc-c"
+                class="list-group-item list-group-item-action">
+                
+                Suppose S C V be such that S ≠∅ and S ≠ V . Consider the edge with the minimum weight such that one of its vertices is in S and the other in V \ S . Such an edge will always be part of any minimum spanning tree of G
+                
+            </button>
+            <button
+                id="2022-1-39-msq-abc-d"
+                class="list-group-item list-group-item-action">
+                
+                G can have multiple minimum spanning trees
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-39-msq-abc-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-39-msq-abc-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/39.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-40-msq-abc"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 40</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>The following simple undirected graph is referred to as the Peterson graph.</p>
+
+<p><img src="/assets/images/gate-exams/2022-1-12.png" alt="GATE 2022 Set 1 Q40" /></p>
+
+<p>Which of the following statements is/are TRUE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-40-msq-abc-a"
+                class="list-group-item list-group-item-action">
+                
+                The chromatic number of the graph is 3
+                
+            </button>
+            <button
+                id="2022-1-40-msq-abc-b"
+                class="list-group-item list-group-item-action">
+                
+                The graph has a Hamiltonian pathwith the third smallest and the fourth smallest weights are part of any minimum spanning tree of G .
+                
+            </button>
+            <button
+                id="2022-1-40-msq-abc-c"
+                class="list-group-item list-group-item-action">
+                
+                <img src="/assets/images/gate-exams/2022-1-13.png"></img>
+                
+            </button>
+            <button
+                id="2022-1-40-msq-abc-d"
+                class="list-group-item list-group-item-action">
+                
+                The size of the largest independent set of the given graph is (A subset of vertices of a graph form an independent set if no two vertices of the subset are adjacent.)
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-40-msq-abc-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-40-msq-abc-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/40.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-41-mcq-b"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 41</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the following recurrence:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>f(1) = 1;
+f(2n) = 2f(n) - 1, for n≥1;
+f(2n+1) = 2f(n) + 1, for n≥1;
+</code></pre></div></div>
+
+<p>Then, which of the following statements is/are TRUE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-41-mcq-b-a"
+                class="list-group-item list-group-item-action">
+                
+                $f(2^{n} – 1) = 2^{n} – 1$
+                
+            </button>
+            <button
+                id="2022-1-41-mcq-b-b"
+                class="list-group-item list-group-item-action">
+                
+                $f(2^{n}) = 1$
+                
+            </button>
+            <button
+                id="2022-1-41-mcq-b-c"
+                class="list-group-item list-group-item-action">
+                
+                $f(5 \cdot 2^{n}) = 2^{n+1} + 1$
+                
+            </button>
+            <button
+                id="2022-1-41-mcq-b-d"
+                class="list-group-item list-group-item-action">
+                
+                $f(2^{n} + 1) = 2^{n} + 1$
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-41-mcq-b-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-41-mcq-b-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/41.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-42-msq-b"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 42</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Which of the properties hold for the adjacency matrix A of a simple undirected unweighted graph having n vertices?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>f(1) = 1;
+f(2n) = 2f(n) - 1, for n≥1;
+f(2n+1) = 2f(n) + 1, for n≥1;
+</code></pre></div></div>
+
+<p>Then, which of the following statements is/are TRUE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-42-msq-b-a"
+                class="list-group-item list-group-item-action">
+                
+                The diagonal entries of $A^2$ are the degrees of the vertices of the graph.
+                
+            </button>
+            <button
+                id="2022-1-42-msq-b-b"
+                class="list-group-item list-group-item-action">
+                
+                If the graph is connected, then none of the entries of $A^{n-1} + I_n can be zero.
+                
+            </button>
+            <button
+                id="2022-1-42-msq-b-c"
+                class="list-group-item list-group-item-action">
+                
+                If the sum of all the elements of A is at most 2(n-1), then the graph must be acyclic.
+                
+            </button>
+            <button
+                id="2022-1-42-msq-b-d"
+                class="list-group-item list-group-item-action">
+                
+                If there is at least a 1 in each of A’s rows and columns, then the graph must be connected.
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-42-msq-b-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-42-msq-b-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/42.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-43-msq-acd"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 43</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>​​​​​Which of the following is/are the eigenvector(s) for the matrix given below?</p>
+
+\[\begin{pmatrix} – 9 &amp; – 6 &amp; – 2 &amp; – 4 \\ – 8 &amp; – 6 &amp; – 3 &amp; – 1 \\ 20 &amp; 15 &amp; 8 &amp; 5 \\ 32 &amp; 21 &amp; 7 &amp; 12 \end{pmatrix}\]
+
+<p>Then, which of the following statements is/are TRUE?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-43-msq-acd-a"
+                class="list-group-item list-group-item-action">
+                
+                $\begin{pmatrix} – 1 \\ 1 \\ 0 \\ 1 \end{pmatrix}$
+                
+            </button>
+            <button
+                id="2022-1-43-msq-acd-b"
+                class="list-group-item list-group-item-action">
+                
+                $\begin{pmatrix} 1 \\ 0 \\ – 1 \\ 0 \end{pmatrix}$
+                
+            </button>
+            <button
+                id="2022-1-43-msq-acd-c"
+                class="list-group-item list-group-item-action">
+                
+                $\begin{pmatrix} – 1 \\ 0 \\ 2 \\ 2 \end{pmatrix}$
+                
+            </button>
+            <button
+                id="2022-1-43-msq-acd-d"
+                class="list-group-item list-group-item-action">
+                
+                $\begin{pmatrix} 0 \\ 1 \\ – 3 \\ 0 \end{pmatrix}$
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-43-msq-acd-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-43-msq-acd-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/43.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-44-msq-abd"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 44</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider a system with a 2 KB direct-mapped data cache with a block size of 64 bytes. The system has a physical address space of 64 KB and a word length of 16 bits. During the execution of a program, four data words P, Q, R, and S are accessed in that order 10 times (i.e., PQRSPQRS…). Hence, there are 40 accesses to the data cache altogether. Assume that the data cache is initially empty and no other data words are accessed by the program. The addresses of the first bytes of P, Q, R, and S are 0xA248, 0xC28A, 0xCA8A, and 0xA262, respectively. For the execution of the above program, which of the following statements is/are TRUE with respect to the data cache?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-44-msq-abd-a"
+                class="list-group-item list-group-item-action">
+                
+                Every access to S is a hit.
+                
+            </button>
+            <button
+                id="2022-1-44-msq-abd-b"
+                class="list-group-item list-group-item-action">
+                
+                Once P is brought to the cache it is never evicted.
+                
+            </button>
+            <button
+                id="2022-1-44-msq-abd-c"
+                class="list-group-item list-group-item-action">
+                
+                At the end of the execution-only R and S reside in the cache.
+                
+            </button>
+            <button
+                id="2022-1-44-msq-abd-d"
+                class="list-group-item list-group-item-action">
+                
+                Every access to R evicts Q from the cache.
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-44-msq-abd-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-44-msq-abd-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/44.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-45-msq-bd"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 45</span><br>
+            <span class="badge rounded-pill text-bg-primary">MSQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider routing table of an organization’s router shown below:</p>
+
+\[\begin{array} {|l|l|l|} \hline \text{Subnet Number} &amp; \text{Subnet Mask} &amp; \text{Next Hop} \\\hline 12.20.164.0 &amp; 255.255.252.0 &amp; \text{R1} \\\hline  12.20.170.0 &amp; 255.255.254.0 &amp; \text{R2} \\\hline 12.20.168.0 &amp; 255.255.254.0 &amp; \text{Interface 0} \\\hline 12.20.166.0 &amp; 255.255.254.0 &amp; \text{Interface 1} \\\hline \text{default} &amp; &amp; \text{R3} \\\hline \end{array}\]
+
+<p>Which of the following prefixes in CIDR notation can be collectively used to correctly aggregate all of the subnets in the routing table?</p>
+
+
+
+        <hr>
+
+        
+        <div id="options" class="list-group mb-4">
+            <button
+                id="2022-1-45-msq-bd-a"
+                class="list-group-item list-group-item-action">
+                
+                12.20.164.0/20
+                
+            </button>
+            <button
+                id="2022-1-45-msq-bd-b"
+                class="list-group-item list-group-item-action">
+                
+                12.20.164.0/22
+                
+            </button>
+            <button
+                id="2022-1-45-msq-bd-c"
+                class="list-group-item list-group-item-action">
+                
+                12.20.164.0/21
+                
+            </button>
+            <button
+                id="2022-1-45-msq-bd-d"
+                class="list-group-item list-group-item-action">
+                
+                12.20.168.0/22
+                
+            </button>
+        </div>
+        
+
+        
+        <button
+            id="2022-1-45-msq-bd-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-45-msq-bd-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/45.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-46-nat-2,2"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 46</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the relational database with the following four schemas and their respective instances.</p>
+
+<ul>
+  <li>Student(sNo, sName, dNo) Dept(dNo, dName)</li>
+  <li>Course(cNo, cName, dNo) Register(sNo, cNo)</li>
+</ul>
+
+\[\begin{array} {|c|c|c|} \hline  &amp; \text{Students} &amp; \\ \hline  \text{sNo}  &amp; \text{sName} &amp;  \text{dNo} \\ \hline \text{S01} &amp; \text{James} &amp; \text{D01} \\ \hline \text{S02} &amp; \text{Rocky} &amp; \text{D01} \\ \hline \text{S03} &amp; \text{Jackson} &amp; \text{D02} \\ \hline \text{S04} &amp; \text{Jane} &amp; \text{D01} \\ \hline \text{S05} &amp; \text{Milli} &amp; \text{D02}\\ \hline \end{array} \quad\]
+
+\[\begin{array} {|c|c|} \hline  &amp; \text{Depth} \\ \hline  \text{dNo}  &amp; \text{dName} \\ \hline \text{D01} &amp; \text{CSE} \\ \hline \text{D02} &amp; \text{EEE} \\ \hline  \end{array} \quad\]
+
+\[\begin{array} {|c|c|c|} \hline  &amp; \text{Course} &amp; \\ \hline  \text{cNo}  &amp; \text{cName} &amp;  \text{dNo} \\ \hline \text{C11} &amp; \text{DS} &amp; \text{D01} \\ \hline \text{C12} &amp; \text{OS} &amp; \text{D01} \\ \hline \text{C21} &amp; \text{DE} &amp; \text{D02} \\ \hline \text{C22} &amp; \text{PT} &amp; \text{D02} \\ \hline \text{C23} &amp; \text{CV} &amp; \text{D03}\\ \hline \end{array}\quad\]
+
+\[\begin{array} {|c|c|} \hline  &amp; \text{Register} \\ \hline  \text{sNo}  &amp; \text{cNo} \\ \hline \text{S01} &amp; \text{C11} \\ \hline \text{S01} &amp; \text{C12} \\ \hline \text{S02} &amp; \text{C11} \\ \hline  \text{S03} &amp; \text{C21}\\ \hline \text{S03} &amp; \text{C22} \\ \hline \text{S03} &amp; \text{C23} \\ \hline \text{S04} &amp; \text{C11} \\ \hline \text{S04} &amp; \text{C12} \\ \hline \text{S05} &amp; \text{C11}\\ \hline \text{S05} &amp; \text{C21} \\ \hline \end{array}\]
+
+<p>SQL Query:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">Student</span> <span class="k">AS</span> <span class="n">S</span> <span class="k">WHERE</span> <span class="k">NOT</span> <span class="n">EXIST</span> 
+<span class="p">(</span><span class="k">SELECT</span> <span class="n">cNo</span> <span class="k">FROM</span> <span class="n">Course</span> <span class="k">WHERE</span> <span class="n">dNo</span> <span class="o">=</span> <span class="err">“</span><span class="n">D01</span><span class="err">”</span> 
+<span class="k">EXCEPT</span> 
+<span class="k">SELECT</span> <span class="n">cNo</span> <span class="k">FROM</span> <span class="n">Register</span> <span class="k">WHERE</span> <span class="n">sNo</span> <span class="o">=</span> <span class="n">S</span><span class="p">.</span><span class="n">sNo</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<p>The number of rows returned by the above SQL query is__<strong>__</strong>___.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-46-nat-2,2-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-46-nat-2,2-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-46-nat-2,2-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/46.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-47-nat-0.5,0.5"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 47</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider a network with three routers P, Q, R shown in the figure below. All the links have cost of unity</p>
+
+<p><img src="/assets/images/gate-exams/2022-1-14.png" alt="GATE 2022 Set 1 Q47" /></p>
+
+<p>The routers exchange distance vector routing information and have converged on the routing tables, after which the link Q−R fails. Assume that P and Q send out routing updates at random times, each at the same average rate. The probability of a routing loop formation (rounded off to one decimal place) between P and Q, leading to count-to-infinity problem, is__<strong>__</strong>___.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-47-nat-0.5,0.5-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-47-nat-0.5,0.5-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-47-nat-0.5,0.5-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/47.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-48-nat-24,24"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 48</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Let G (V, E) be a directed graph, where V = {1, 2, 3, 4, 5} is the set of vertices and E is the set of directed edges, as defined by the following adjacency matrix A.</p>
+
+\[A [i][j] = \left\{\begin{matrix} 1, &amp; 1 \leq j \leq i \leq 5 \\ 0, &amp; \text{otherwise}\end{matrix}\right.\]
+
+<p>A[i][j]=1 indicates a directed edge from node i to node j. A directed spanning tree of G rooted at $r \in V$, is defined as a subgraph T of G such that the undirected version of T is a tree, and T contains a directed path from r to every other vertex in V. The number of such directed spanning trees rooted at vertex 5 is <strong>__</strong><strong>__</strong><strong>__</strong>.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-48-nat-24,24-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-48-nat-24,24-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-48-nat-24,24-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/48.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-49-nat-7.08,7.08"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 49</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider a 100 Mbps link between an earth station (sender) and a satellite (receiver) at an altitude of 2100 km. The signal propagates at a speed of $3×10^8$ m/s. The time taken (in milliseconds, rounded off to two decimal places) for the receiver to completely receive a packet of 1000 bytes transmitted by the sender is__<strong>__</strong>_.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-49-nat-7.08,7.08-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-49-nat-7.08,7.08-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-49-nat-7.08,7.08-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/49.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-50-nat-33,33"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 50</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the data transfer using TCP over a 1 Gbps link. Assuming that the maximum segment lifetime (MSL) is set to 60 seconds, the minimum number of bits required for the sequence number field of the TCP header, to prevent the sequence number space from wrapping around during the MSL is__<strong>__</strong><em>__</em>.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-50-nat-33,33-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-50-nat-33,33-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-50-nat-33,33-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/50.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-51-nat-1.43,1.43"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 51</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>A processor X1 operating at 2 GHz has a standard 5-stage RISC instruction pipeline having a base CPI (cycles per instruction) of one without any pipeline hazards. For a given program P that has 30% branch instructions, control hazards incur 2 cycles stall for every branch. A new version of the processor X2 operating at same clock frequency has an additional branch predictor unit (BPU) that completely eliminates stalls for correctly predicted branches. There is neither any savings nor any additional stalls for wrong predictions. There are no structural hazards and data hazards for X1 and X2. If the BPU has a prediction accuracy of 80%, the speed up (rounded off to two decimal places) obtained by X2 over X1 in executing P is__<strong>__</strong><em>__</em>.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-51-nat-1.43,1.43-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-51-nat-1.43,1.43-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-51-nat-1.43,1.43-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/51.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-52-nat-6,6"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 52</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the queues Q1 containing four elements and Q2 containing none (shown as the Initial State in the figure). The only operations allowed on these two queues are Enqueue(Q, element) and Dequeue(Q). The minimum number of Enqueue operations on Q1 required to place the elements of Q1 in Q2 in reverse order (shown as the Final State in the figure) without using any additional storage is__<strong>__</strong>___.</p>
+
+<p><img src="/assets/images/gate-exams/2022-1-15.png" alt="GATE 2022 Set 1 Q52" /></p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-52-nat-6,6-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-52-nat-6,6-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-52-nat-6,6-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/52.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-53-nat-153,153"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 53</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider two files systems A and B , that use contiguous allocation and linked allocation, respectively. A file of size 100 blocks is already stored in A and also in B. Now, consider inserting a new block in the middle of the file (between 50th and 51st block), whose data is already available in the memory. Assume that there are enough free blocks at the end of the file and that the file control blocks are already in memory. Let the number of disk accesses required to insert a block in the middle of the file in A and B are nA and nB respectively, then the value of nA  + nB is__<strong>__</strong>_.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-53-nat-153,153-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-53-nat-153,153-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-53-nat-153,153-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/53.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-54-nat-0.6,0.6"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 54</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider a demand paging system with four-page frames (initially empty) and an LRU page replacement policy. For the following page reference string</p>
+
+\[7, 2, 7, 3, 2, 5, 3, 4, 6, 7, 7, 1, 5, 6, 1\]
+
+<p>the page fault rate, defined as the ratio of number of page faults to the number of memory accesses (rounded off to one decimal place) is__<strong>__</strong>_.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-54-nat-0.6,0.6-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-54-nat-0.6,0.6-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-54-nat-0.6,0.6-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/54.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+    
+    
+    
+    <div id="2022-1-55-nat-80,80"
+    class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 55</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">TECHNICAL</span>
+        </div>
+
+        <p>Consider the following grammar along with translation rules</p>
+
+<p>$S \rightarrow S1 \# T \qquad \{S_{\text{.val}}=S1{\text{.val}}*T{\text{.val}}\}$</p>
+
+<p>$S \rightarrow T \qquad \qquad \{S_{\text{.val}} = T_{\text{.val}}\}$</p>
+
+<p>$T \rightarrow T1 \% R \qquad  \{T_{\text{.val}}=T1_{\text{.val}} ÷ R{\text{.val}}\}$</p>
+
+<p>$T \rightarrow R \qquad \qquad {T{\text{.val}} = R{\text{.val}}}$</p>
+
+<p>$R \rightarrow \text{id} \qquad \qquad {R{\text{.val}} = \text{id}_{\text{.val}}}$</p>
+
+<p>Here # and % are operators and id is a token that represents an integer and id. val represents the corresponding integer value. The set of non-terminals is {S, T, R, P} and a subscripted non-terminal indicates an instance of the non-terminal.</p>
+
+<p>Using this translation scheme, the computed value of S.val for root of the parse tree for the expression 20#10%5#8%2%2 is <strong>__</strong><strong>__</strong>_.</p>
+
+
+
+        <hr>
+
+        
+
+        <div class="mb-3">
+            <input id="2022-1-55-nat-80,80-input" class="form-control" type=number step=0.01 placeholder="Enter numeric answer here" aria-label="default input example" oninput="updateNumericAnswer(this.id, this.value)">
+        </div>
+
+        
+
+        
+        <button
+            id="2022-1-55-nat-80,80-submit-answer"
+            class="btn btn-success disabled submit-answer">Submit</button>
+        <button
+            id="2022-1-55-nat-80,80-clear-answer"
+            class="btn btn-light clear-answer">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2022/technical/55.html">Discuss Question →</a>
+
+        
+    </div>
+</div>
+    
+    
+</section>
+
+<!-- Comments section-->
+
+<script>
+
+    selectedAnswers = {};
+    MCQ_OPTIONS = ['a', 'b', 'c', 'd']
+
+    function updateNumericAnswer(id, value) {
+        data = id.split("-");
+        submittedAnswers = data[4].split(",");
+        if (submittedAnswers[0] <= value && value <= submittedAnswers[1]) {
+            selectedAnswers[data[0] + "-" + data[1] + "-" + data[2] + "-" + data[3] + "-" + data[4]] = true;
+        } else {
+            selectedAnswers[data[0] + "-" + data[1] + "-" + data[2] + "-" + data[3] + "-" + data[4]] = false;
+        }
+
+        if (value != "") {
+            document.getElementById(data[0] + "-" + data[1] + "-" + data[2] + "-" + data[3] + "-" + data[4] + "-submit-answer").classList.remove("disabled");
+        } else {
+            document.getElementById(data[0] + "-" + data[1] + "-" + data[2] + "-" + data[3] + "-" + data[4] + "-submit-answer").classList.add("disabled");
+        }
+    }
+
+    const options = document.getElementById('questions');
+
+    options.addEventListener('click', (event) => {
+
+        // Check if only button is clicked
+        const isButton = event.target.nodeName === 'BUTTON';
+        if (!isButton) {
+            return;
+        }
+
+        dataFromButton = event.target.id.split("-");
+
+        if (event.target.classList.contains("submit-answer")) {
+
+            qbox = document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]);
+
+            if (dataFromButton[3] == "mcq" || dataFromButton[3] == "msq") {
+
+                selectedAnswer = selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]];
+                if (selectedAnswer == undefined) {
+                    return;
+                }
+            
+            } else if (dataFromButton[3] == "nat") {
+                inputAnswer = document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-input").value;
+                natAnswerRange = dataFromButton[4].split(",");
+                if (inputAnswer >= natAnswerRange[0] && inputAnswer <= natAnswerRange[1]) {
+                    selectedAnswer = true;
+                } else {
+                    selectedAnswer = false;
+                }
+            }
+
+            if (selectedAnswer == false) {
+                qbox.classList.add("border", "border-4", "border-danger");
+                qbox.classList.remove("border-success");
+            } else {
+                qbox.classList.add("border", "border-4", "border-success");
+                qbox.classList.remove("border-danger");
+            }
+
+        } else if (event.target.classList.contains("clear-answer")) {
+            delete selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]];
+            document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]).classList.remove("border", "border-4", "border-success", "border-danger");
+            document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-submit-answer").classList.add("disabled");
+        } else {
+
+            if (dataFromButton[3] == "mcq") {
+
+                if (dataFromButton[4] == dataFromButton[5]) {
+                    answer = true;
+                } else {
+                    answer = false;
+                }
+                selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]] = answer;
+                
+                // Remove all active.
+                MCQ_OPTIONS.forEach((e) => {
+                    document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + '-' + e).classList.remove('active');
+                });
+                // Set current pressed button as active.
+                event.target.classList.toggle('active');
+
+            } else if (dataFromButton[3] == "msq") {
+
+                event.target.classList.toggle('active');
+
+                // Get all selected answers.
+                selectedOptions = "";
+                MCQ_OPTIONS.forEach((e) => {
+                    if (document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + '-' + e).classList.contains('active')) {
+                        selectedOptions += e;
+                    }
+                });
+
+                // Check if answer is wrong or right.
+                answer = true;
+                MCQ_OPTIONS.forEach((e) => {
+                    if (selectedOptions.includes(e) ^ dataFromButton[4].includes(e) == 1) {
+                        answer = false; 
+                    }
+                });
+                selectedAnswers[dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4]] = answer;
+            }
+
+            // Enable/Disable submit answer button.
+            if (dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] in selectedAnswers) {
+                document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-submit-answer").classList.remove("disabled");
+            } else {
+                document.getElementById(dataFromButton[0] + "-" + dataFromButton[1] + "-" + dataFromButton[2] + "-" + dataFromButton[3] + "-" + dataFromButton[4] + "-submit-answer").classList.add("disabled");
+            }
+            
+        }
+    });
+
+
+</script>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; GATE ComputerScience 2022</div>
+                </div>
+                <!-- <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core theme JS-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous">
+    </script>
+    
+    <!-- TODO: Optionally include file -->
+    <script src="/assets/js/question_checker.js"></script>
+    
+
+</body>
+
+</html>
