@@ -1,4 +1,5 @@
-body, html { height: 100%; }
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&family=UnifrakturMaguntia&display=swap");
+body, html { height: 100%; font-family: 'Ubuntu', sans-serif; }
 
 .feature { display: inline-flex; align-items: center; justify-content: center; height: 3rem; width: 3rem; font-size: 1.5rem; }
 

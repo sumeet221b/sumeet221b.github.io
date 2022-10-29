@@ -1,0 +1,2782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>
+
+        
+        GATE CS 2015 Set 2 | 
+        
+        GATE ComputerScience
+
+    </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Katex -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                // • rendering keys, e.g.:
+                throwOnError : false
+            });
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6MX42SZR4F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6MX42SZR4F');
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a class="navbar-brand" href="/">GATE ComputerScience</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                        <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
+                        <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                        <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                        <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <section class="py-4">
+    <div class="container px-4 my-5" style="max-width: 1200px;">
+        <div class="row gx-5">
+            <div class="col-lg-3">
+
+                
+
+                
+                <!-- Author Name -->
+                <!-- <div class="d-flex align-items-center mt-lg-5 mb-4">
+                    <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                        alt="..." />
+                    <div class="ms-3">
+                        <div class="fw-bold">Valerie Luna</div>
+                        <div class="text-muted">News, Business</div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="col-lg-9 rounded shadow p-3 mb-5 rounded" style="padding-top: 32px;">
+                <header class="mb-4">
+    <h1 class="fw-bolder mb-1">GATE CS 2015 Set 2 - Set 2</h1>
+</header>
+
+<section class="mb-5" id="questions">
+    
+
+    <h2>General Aptitude Section</h2><br>
+    
+    
+    
+<div id="2015:2:1:mcq:c" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>We <strong>__</strong><strong>__ our friends’s birthday and we __</strong>_____ how to make it up to him.</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:2:1:mcq:c:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                completely forgot --- don't just know
+                
+            </button>
+            <button id="2015:2:1:mcq:c:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                forgot completely --- don't just know
+                
+            </button>
+            <button id="2015:2:1:mcq:c:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                completely forgot --- just don't know
+                
+            </button>
+            <button id="2015:2:1:mcq:c:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                forgot completely --- just don't know
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:2:1:mcq:c:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:2:1:mcq:c:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-2/general-aptitude/1.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:2:2:mcq:c" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 2</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Choose the statement where underlined word is used correctly.</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:2:2:mcq:c:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                The industrialist had a <u>personnel</u> jet.
+                
+            </button>
+            <button id="2015:2:2:mcq:c:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                I write my experience in my <u>personnel</u> diary.
+                
+            </button>
+            <button id="2015:2:2:mcq:c:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                All <u>personnel</u> are being given the day off.
+                
+            </button>
+            <button id="2015:2:2:mcq:c:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Being religious is a <u>personnel</u> aspect.
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:2:2:mcq:c:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:2:2:mcq:c:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-2/general-aptitude/2.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:2:3:mcq:c" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 3</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <table>
+  <tbody>
+    <tr>
+      <td>Consider a function $f(x) = 1-</td>
+      <td>x</td>
+      <td>\text{ on } -1 \leq x \leq 1$. The value of x at which the function attains a maximum, and the maximum value of the function are:</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:2:3:mcq:c:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                0, -1
+                
+            </button>
+            <button id="2015:2:3:mcq:c:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                -1, 0
+                
+            </button>
+            <button id="2015:2:3:mcq:c:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                0, 1
+                
+            </button>
+            <button id="2015:2:3:mcq:c:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                -1, 2
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:2:3:mcq:c:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:2:3:mcq:c:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-2/general-aptitude/3.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:2:4:mcq:d" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 4</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>A generic term that includes various items of clothing such as a skirt, a pair of trousers and a shirt is</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:2:4:mcq:d:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                fabric
+                
+            </button>
+            <button id="2015:2:4:mcq:d:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                textile
+                
+            </button>
+            <button id="2015:2:4:mcq:d:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                fiber
+                
+            </button>
+            <button id="2015:2:4:mcq:d:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                apparel
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:2:4:mcq:d:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:2:4:mcq:d:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-2/general-aptitude/4.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:2:5:mcq:c" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 5</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Based on the given statements, select the most appropriate option to solve the given question.</p>
+
+<p>What will be the total weight of 10 poles each of same weight?</p>
+
+<p>Statements:</p>
+
+<p>I. One fourth of the weight of the pole is 5 kg.</p>
+
+<p>II. The total weight of these poles is 160 kg more than the total weight of two poles.</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:2:5:mcq:c:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Statement I alone is not sufficient.
+                
+            </button>
+            <button id="2015:2:5:mcq:c:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Statement II alone is not sufficient.
+                
+            </button>
+            <button id="2015:2:5:mcq:c:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Either I or II alone is sufficient.
+                
+            </button>
+            <button id="2015:2:5:mcq:c:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Both statements I and II together are not sufficient.
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:2:5:mcq:c:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:2:5:mcq:c:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-2/general-aptitude/5.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:2:6:mcq:b" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 6</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>If the list of letters P, R, S, T, U is an arithmetic sequence, which of the following are also in arithmetic sequence?</p>
+
+<p>I. $2P, 2R, 2S, 2T, 2U$</p>
+
+<p>II. $P-3, R-3, S-3, T-3, U-3$</p>
+
+<p>III. $P^2, R^2, S^2, T^2, U^2$</p>
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:2:6:mcq:b:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                I only
+                
+            </button>
+            <button id="2015:2:6:mcq:b:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                I and II
+                
+            </button>
+            <button id="2015:2:6:mcq:b:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                II and III
+                
+            </button>
+            <button id="2015:2:6:mcq:b:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                I and III
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:2:6:mcq:b:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:2:6:mcq:b:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-2/general-aptitude/6.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:2:7:mcq:a" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 7</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Four branches of a company are located at M, N, O and P. M is north of N at a distance of 4 km; P is south of O at a distance of 2 km; N is southeast of O by 1 km. What is the distance between M and P in km?</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:2:7:mcq:a:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                5.34
+                
+            </button>
+            <button id="2015:2:7:mcq:a:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                6.74
+                
+            </button>
+            <button id="2015:2:7:mcq:a:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                28.5
+                
+            </button>
+            <button id="2015:2:7:mcq:a:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                45.49
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:2:7:mcq:a:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:2:7:mcq:a:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-2/general-aptitude/7.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:2:8:mcq:b" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 8</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>In a triangle PQR, PS is the angle bisector of ∠QPR and ∠QPS = $60^\circ$. What is the length of PS?</p>
+
+<p><img src="/assets/images/gate-exams/2015-2-1.jpg" alt="GATE 2015 Set 2 Q8" /></p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:2:8:mcq:b:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                $\left(\dfrac{(q+r)} {qr}\right)$
+                
+            </button>
+            <button id="2015:2:8:mcq:b:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                $\left(\dfrac {qr} {q+r}\right)$
+                
+            </button>
+            <button id="2015:2:8:mcq:b:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                $\large \sqrt {(q^2 + r^2)}$
+                
+            </button>
+            <button id="2015:2:8:mcq:b:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                $\left(\dfrac{(q+r)^2} {qr}\right)$
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:2:8:mcq:b:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:2:8:mcq:b:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-2/general-aptitude/8.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:2:9:nat:8,8" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 9</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>If p, q, r, s are distinct integers such that:</p>
+
+<p>f(p, q, r, s) = max (p, q, r, s)</p>
+
+<p>g(p, q, r, s) = min (p, q, r, s)</p>
+
+<p>h(p, q, r, s) = remainder of (p × q) / (r × s)  if (p × q) &gt; (r × s) OR 
+                remainder of (r × s) / (p × q) if (r × s) &gt; (p × q)</p>
+
+<p>Also a function fgh (p, q, r, s) = f(p, q, r, s) × g(p, q, r, s) × h(p, q, r, s).</p>
+
+<p>Also the same operation are valid with two variable functions of the form f(p, q).</p>
+
+<p>What is the value of fg(h(2, 5, 7, 3), 4, 6, 8)?</p>
+
+
+        <hr>
+        
+        <div class="mb-3">
+          <input type="number" step="0.01" class="form-control" id="2015:2:9:nat:8,8:input" oninput="setAnswer(this.id)" placeholder="Enter you numeric answer here">
+        </div>
+        
+        
+
+        
+        <button id="2015:2:9:nat:8,8:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:2:9:nat:8,8:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-2/general-aptitude/9.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:2:10:mcq:a" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 10</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Out of the following 4 sentences, select the most suitable sentence with respect to grammar and usage:</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:2:10:mcq:a:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Since the report lacked needed information, it was of no use to them.
+                
+            </button>
+            <button id="2015:2:10:mcq:a:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                The report was useless to them because there were no needed information in it.
+                
+            </button>
+            <button id="2015:2:10:mcq:a:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Since the report did not contain the needed information, it was not real useful to them.
+                
+            </button>
+            <button id="2015:2:10:mcq:a:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Since the report lacked needed information, it would not had been useful to them.
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:2:10:mcq:a:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:2:10:mcq:a:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-2/general-aptitude/10.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <h2>Technical Section</h2><br>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</section>
+
+<!-- Comments section-->
+
+<script>
+
+        selectedAnswers = {};
+        MCQOptions = ['a', 'b', 'c', 'd'];
+        
+        function setAnswer(id) {
+            // id is year:set:qno:qtype:answer:selectedAnswer
+            data = id.split(":");
+        
+            // Get qid
+            qid = data[0] + ":" + data[1] + ":" + data[2] + ":" + data[3] + ":" + data[4]
+            selectedAnswer = data[5];
+
+            if (data[3] == "mcq") {  
+                selectedAnswers[qid] = selectedAnswer;
+
+                // Set all buttons to not active.
+                // Toggle clicked button.
+                MCQOptions.forEach(e => {
+                    document.getElementById(qid + ":" + e).classList.remove('active');
+                });
+
+                document.getElementById(id).classList.add('active');
+            } else if (data[3] == "msq") {
+                document.getElementById(id).classList.toggle('active');
+
+                // Create selected answer string.
+                selectedAnswer = "";
+                MCQOptions.forEach(e => {
+                    if (document.getElementById(qid + ":" + e).classList.contains('active')) {
+                        selectedAnswer += e;
+                    }
+                });
+
+                if (selectedAnswer == "") {
+                    // Delete answer
+                    delete selectedAnswers[qid];
+                } else {
+                    selectedAnswers[qid] = selectedAnswer;
+                }
+
+            } else if (data[3] == "nat") {
+                correctAnswerArray = data[4].split(",");
+
+                natAnswer = document.getElementById(id).value;
+
+                floatNatAnswer = parseFloat(natAnswer);
+                if (floatNatAnswer != NaN) {
+                    selectedAnswers[qid] = floatNatAnswer;
+                }   
+            }
+
+            if (qid in selectedAnswers) {
+                document.getElementById(qid + ':submit-answer').classList.remove('disabled');
+            } else {
+                document.getElementById(qid + ':submit-answer').classList.add('disabled');
+            }
+        }
+
+        function checkAnswer(id) {
+            // id is year:set:qno:qtype:answer:submit-answer
+            data = id.split(":");
+
+            // Get qid
+            qid = data[0] + ":" + data[1] + ":" + data[2] + ":" + data[3] + ":" + data[4];
+            selectedAnswer = selectedAnswers[qid];
+            correctAnswer = data[4];
+            questionType = data[3];
+            isAnswerCorrect = true;
+
+            if (questionType == "mcq" || questionType == "msq") {
+                MCQOptions.every((e) => {
+                    if (selectedAnswer.includes(e) ^ correctAnswer.includes(e)) {
+                        isAnswerCorrect = false;
+                        return false;
+                    }
+                    return true;
+                }); 
+            } else if (questionType == "nat") {
+                correctAnswerArray = data[4].split(",");
+                correctAnswerLowerBound = parseFloat(correctAnswerArray[0]);
+                correctAnswerUpperBound = parseFloat(correctAnswerArray[1]);
+
+                selectedAnswer = selectedAnswers[qid];
+
+                if (!(correctAnswerLowerBound <= selectedAnswer && selectedAnswer <= correctAnswerUpperBound)) {
+                    isAnswerCorrect = false;
+                }
+            }
+            
+
+            if (isAnswerCorrect) {
+                document.getElementById(qid).classList.remove('border-danger');
+                document.getElementById(qid).classList.add('border', 'border-4', 'border-success');
+            } else {
+                document.getElementById(qid).classList.remove('border-success');
+                document.getElementById(qid).classList.add('border', 'border-4', 'border-danger');
+            }
+        }
+
+        function clearAnswer(id) {
+            console.log(id);
+
+            // qid is year:set:qno:qtype:answer:submit-answer
+            data = id.split(":");
+            
+            // Get qid
+            qid = data[0] + ":" + data[1] + ":" + data[2] + ":" + data[3] + ":" + data[4]
+
+            // Delete answer
+            delete selectedAnswers[qid];
+
+            // Disable button
+            document.getElementById(qid + ':submit-answer').classList.add('disabled');
+        
+            // Remove active buttons
+            MCQOptions.forEach((e) => {
+                document.getElementById(qid + ":" + e).classList.remove('active');
+            });
+
+            // Remove border
+            document.getElementById(qid).classList.remove('border', 'border-4', 'border-success', 'border-danger');
+        }
+
+</script>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; GATE ComputerScience 2022</div>
+                </div>
+                <!-- <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core theme JS-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous">
+    </script>
+    
+    <!-- TODO: Optionally include file -->
+    <script src="/assets/js/question_checker.js"></script>
+    
+
+</body>
+
+</html>
