@@ -1,0 +1,2766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>
+
+        
+        GATE CS 2015 Set 3 | 
+        
+        GATE ComputerScience
+
+    </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Katex -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                // • rendering keys, e.g.:
+                throwOnError : false
+            });
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6MX42SZR4F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6MX42SZR4F');
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a class="navbar-brand" href="/">GATE ComputerScience</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                        <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
+                        <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                        <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                        <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <section class="py-4">
+    <div class="container px-4 my-5" style="max-width: 1200px;">
+        <div class="row gx-5">
+            <div class="col-lg-3">
+
+                
+
+                
+                <!-- Author Name -->
+                <!-- <div class="d-flex align-items-center mt-lg-5 mb-4">
+                    <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                        alt="..." />
+                    <div class="ms-3">
+                        <div class="fw-bold">Valerie Luna</div>
+                        <div class="text-muted">News, Business</div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="col-lg-9 rounded shadow p-3 mb-5 rounded" style="padding-top: 32px;">
+                <header class="mb-4">
+    <h1 class="fw-bolder mb-1">GATE CS 2015 Set 3 - Set 3</h1>
+</header>
+
+<section class="mb-5" id="questions">
+    
+
+    <h2>General Aptitude Section</h2><br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:3:1:mcq:b" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>If ROAD is written as URDG, then SWAN should be written as:</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:3:1:mcq:b:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                VXDQ
+                
+            </button>
+            <button id="2015:3:1:mcq:b:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                VZDQ
+                
+            </button>
+            <button id="2015:3:1:mcq:b:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                VZDP
+                
+            </button>
+            <button id="2015:3:1:mcq:b:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                UXDQ
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:3:1:mcq:b:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:3:1:mcq:b:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-3/general-aptitude/1.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:3:2:mcq:c" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 2</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>The Tamil version of <strong>__</strong><strong>__ John Abraham-starrer <em>Madras Cafe</em> __</strong><strong>__</strong> cleared by the Censor Board with no cuts last week, but the film’s distributor <strong>__</strong>_ no takers among the exhibitors for a release in Tamilnadu <strong>__</strong>_ this Friday.</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:3:2:mcq:c:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Mr., was, found, on
+                
+            </button>
+            <button id="2015:3:2:mcq:c:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                a, was, found, at
+                
+            </button>
+            <button id="2015:3:2:mcq:c:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                the, was, found, on
+                
+            </button>
+            <button id="2015:3:2:mcq:c:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                a, being, find at
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:3:2:mcq:c:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:3:2:mcq:c:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-3/general-aptitude/2.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:3:3:mcq:b" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 3</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Extreme focus on syllabus and studying for tests has become such a dominant concern of Indian student that they close their minds to anything <strong>__</strong>_____ to the requirements of the exam.</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:3:3:mcq:b:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                related
+                
+            </button>
+            <button id="2015:3:3:mcq:b:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                extraneous
+                
+            </button>
+            <button id="2015:3:3:mcq:b:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                outside
+                
+            </button>
+            <button id="2015:3:3:mcq:b:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                useful
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:3:3:mcq:b:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:3:3:mcq:b:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-3/general-aptitude/3.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:3:4:mcq:b" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 4</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Select the pair of best expresses a relationship similar to that expressed in the pair:</p>
+
+<p><strong>Children : Pediatrician</strong></p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:3:4:mcq:b:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Adult : Orthopaedist
+                
+            </button>
+            <button id="2015:3:4:mcq:b:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Females : Gynaecologist
+                
+            </button>
+            <button id="2015:3:4:mcq:b:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Kidney : Nephrologist
+                
+            </button>
+            <button id="2015:3:4:mcq:b:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Skin : Dermatologist
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:3:4:mcq:b:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:3:4:mcq:b:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-3/general-aptitude/4.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:3:5:mcq:c" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 5</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>A function is linear and has a value of at and at . Find its value at .</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:3:5:mcq:c:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                59
+                
+            </button>
+            <button id="2015:3:5:mcq:c:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                45
+                
+            </button>
+            <button id="2015:3:5:mcq:c:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                43
+                
+            </button>
+            <button id="2015:3:5:mcq:c:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                35
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:3:5:mcq:c:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:3:5:mcq:c:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-3/general-aptitude/5.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:3:6:mcq:a" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 6</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Alexander turned his attention towards India, since he had conquered Persia.</p>
+
+<p>Which one of the statements below is logically valid and can be inferred from the above sentence?</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:3:6:mcq:a:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Alexander would not have turned his attention towards India had he not conquered Persia.
+                
+            </button>
+            <button id="2015:3:6:mcq:a:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Alexander was not ready to rest on his laurels, and wanted to march to India.
+                
+            </button>
+            <button id="2015:3:6:mcq:a:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Alexander was not completely in control of his army and could command it to move towards India.
+                
+            </button>
+            <button id="2015:3:6:mcq:a:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Since Alexander's kingdom extended to Indian borders after the conquest of Persia, he was keen to move further.
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:3:6:mcq:a:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:3:6:mcq:a:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-3/general-aptitude/6.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:3:7:mcq:b" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 7</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>The head of newly formed government desires to appoint five of the six selected members and to portfolios of Home, Power, Defense, Telecom, and Finance. U does not want any portfolio if gets one of the five. wants either Home or Finance or no portfolio. says that if gets Power or Telecom, then she must get the other one. T insists on a portfolio if gets one.</p>
+
+<p>Which is the valid distribution of portfolios?</p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:3:7:mcq:b:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                P-Home, Q-Power, R-Defense, S-Telecom, T-Finance
+                
+            </button>
+            <button id="2015:3:7:mcq:b:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                R-Home, S-Power, P-Defense, Q-Telecom, T-Finance
+                
+            </button>
+            <button id="2015:3:7:mcq:b:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                P-Home, Q-Power, T-Defense, S-Telecom, U-Finance
+                
+            </button>
+            <button id="2015:3:7:mcq:b:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                Q-Home, U-Power, T-Defense, R-Telecom, P-Finance
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:3:7:mcq:b:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:3:7:mcq:b:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-3/general-aptitude/7.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:3:8:mcq:b" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 8</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Choose the most appropriate equation for the function drawn as thick line, in the plot below.</p>
+
+<p><img src="/assets/images/gate-exams/2015-3-1.png" alt="GATE 2015 Set 3 Q8" /></p>
+
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:3:8:mcq:b:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                $x=y-|y|$
+                
+            </button>
+            <button id="2015:3:8:mcq:b:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                $x=-(y-|y|)$
+                
+            </button>
+            <button id="2015:3:8:mcq:b:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                $x=y+|y|$
+                
+            </button>
+            <button id="2015:3:8:mcq:b:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                $x=-(y+|y|)$
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:3:8:mcq:b:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:3:8:mcq:b:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-3/general-aptitude/8.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:3:9:mcq:b" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 9</span><br>
+            <span class="badge rounded-pill text-bg-primary">MCQ</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>Most experts feel that in spite of possessing all the technical skills required to be a batsman of the highest order, he is unlikely to be so due to lack of requisite temperament. He was guilty of throwing away his wicket several time after working hard to lay a strong foundation. His critics pointed out that until he addressed his problem, success at the highest level will continue to elude him.</p>
+
+<p>Which of the statement(s) below is/are logically valid and can be inferred from the above passage?</p>
+
+<p>I. He was already a successful batsman at the highest level.</p>
+
+<p>II. He was to improve his temperament in order to become a great batsman.</p>
+
+<p>III. He failed to make many of his good starts count.</p>
+
+<p>IV. Improving his technical skills will guarantee success.</p>
+
+
+        <hr>
+        
+        <div id="options" class="list-group mb-4">
+            <button id="2015:3:9:mcq:b:a" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                iii and iv
+                
+            </button>
+            <button id="2015:3:9:mcq:b:b" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                ii and iii
+                
+            </button>
+            <button id="2015:3:9:mcq:b:c" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                i, ii and iii
+                
+            </button>
+            <button id="2015:3:9:mcq:b:d" class="list-group-item list-group-item-action" onclick="setAnswer(this.id)">
+                
+                ii only
+                
+            </button>
+        </div>
+        
+
+        
+        <button id="2015:3:9:mcq:b:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:3:9:mcq:b:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-3/general-aptitude/9.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="2015:3:10:nat:2000,2000" class="card mb-4">
+    <div class="card-body">
+        <!-- <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+         -->
+         
+        <div class="mb-4">
+            <span class="badge rounded-pill text-bg-primary">Q 10</span><br>
+            <span class="badge rounded-pill text-bg-primary">NAT</span>
+            <span class="badge rounded-pill text-bg-primary">Marks: 1</span><br>
+            <span class="badge rounded-pill text-bg-primary">APTITUDE</span>
+        </div>
+
+        <p>The exports and imports (in crores of Rs.) of a country from the year 2000 to 2007 are given in the following bar chart. In which year is the combined percentage increase in imports and exports the highest?</p>
+
+<p><img src="/assets/images/gate-exams/2015-3-2.jpg" alt="GATE 2015 Set 3 Q10" /></p>
+
+
+
+        <hr>
+        
+        <div class="mb-3">
+          <input type="number" step="0.01" class="form-control" id="2015:3:10:nat:2000,2000:input" oninput="setAnswer(this.id)" placeholder="Enter you numeric answer here">
+        </div>
+        
+        
+
+        
+        <button id="2015:3:10:nat:2000,2000:submit-answer" class="btn btn-success disabled submit-answer" onclick="checkAnswer(this.id)">Submit</button>
+        <button id="2015:3:10:nat:2000,2000:clear-answer" class="btn btn-light clear-answer" onclick="clearAnswer(this.id)">Clear</button>
+        <a class="btn btn-link float-end" href="/questions/gate/2015-3/general-aptitude/10.html">Discuss Question →</a>
+        
+
+        
+
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <h2>Technical Section</h2><br>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</section>
+
+<!-- Comments section-->
+
+<script>
+
+        selectedAnswers = {};
+        MCQOptions = ['a', 'b', 'c', 'd'];
+        
+        function setAnswer(id) {
+            // id is year:set:qno:qtype:answer:selectedAnswer
+            data = id.split(":");
+        
+            // Get qid
+            qid = data[0] + ":" + data[1] + ":" + data[2] + ":" + data[3] + ":" + data[4]
+            selectedAnswer = data[5];
+
+            if (data[3] == "mcq") {  
+                selectedAnswers[qid] = selectedAnswer;
+
+                // Set all buttons to not active.
+                // Toggle clicked button.
+                MCQOptions.forEach(e => {
+                    document.getElementById(qid + ":" + e).classList.remove('active');
+                });
+
+                document.getElementById(id).classList.add('active');
+            } else if (data[3] == "msq") {
+                document.getElementById(id).classList.toggle('active');
+
+                // Create selected answer string.
+                selectedAnswer = "";
+                MCQOptions.forEach(e => {
+                    if (document.getElementById(qid + ":" + e).classList.contains('active')) {
+                        selectedAnswer += e;
+                    }
+                });
+
+                if (selectedAnswer == "") {
+                    // Delete answer
+                    delete selectedAnswers[qid];
+                } else {
+                    selectedAnswers[qid] = selectedAnswer;
+                }
+
+            } else if (data[3] == "nat") {
+                correctAnswerArray = data[4].split(",");
+
+                natAnswer = document.getElementById(id).value;
+
+                floatNatAnswer = parseFloat(natAnswer);
+                if (floatNatAnswer != NaN) {
+                    selectedAnswers[qid] = floatNatAnswer;
+                }   
+            }
+
+            if (qid in selectedAnswers) {
+                document.getElementById(qid + ':submit-answer').classList.remove('disabled');
+            } else {
+                document.getElementById(qid + ':submit-answer').classList.add('disabled');
+            }
+        }
+
+        function checkAnswer(id) {
+            // id is year:set:qno:qtype:answer:submit-answer
+            data = id.split(":");
+
+            // Get qid
+            qid = data[0] + ":" + data[1] + ":" + data[2] + ":" + data[3] + ":" + data[4];
+            selectedAnswer = selectedAnswers[qid];
+            correctAnswer = data[4];
+            questionType = data[3];
+            isAnswerCorrect = true;
+
+            if (questionType == "mcq" || questionType == "msq") {
+                MCQOptions.every((e) => {
+                    if (selectedAnswer.includes(e) ^ correctAnswer.includes(e)) {
+                        isAnswerCorrect = false;
+                        return false;
+                    }
+                    return true;
+                }); 
+            } else if (questionType == "nat") {
+                correctAnswerArray = data[4].split(",");
+                correctAnswerLowerBound = parseFloat(correctAnswerArray[0]);
+                correctAnswerUpperBound = parseFloat(correctAnswerArray[1]);
+
+                selectedAnswer = selectedAnswers[qid];
+
+                if (!(correctAnswerLowerBound <= selectedAnswer && selectedAnswer <= correctAnswerUpperBound)) {
+                    isAnswerCorrect = false;
+                }
+            }
+            
+
+            if (isAnswerCorrect) {
+                document.getElementById(qid).classList.remove('border-danger');
+                document.getElementById(qid).classList.add('border', 'border-4', 'border-success');
+            } else {
+                document.getElementById(qid).classList.remove('border-success');
+                document.getElementById(qid).classList.add('border', 'border-4', 'border-danger');
+            }
+        }
+
+        function clearAnswer(id) {
+            console.log(id);
+
+            // qid is year:set:qno:qtype:answer:submit-answer
+            data = id.split(":");
+            
+            // Get qid
+            qid = data[0] + ":" + data[1] + ":" + data[2] + ":" + data[3] + ":" + data[4]
+
+            // Delete answer
+            delete selectedAnswers[qid];
+
+            // Disable button
+            document.getElementById(qid + ':submit-answer').classList.add('disabled');
+        
+            // Remove active buttons
+            MCQOptions.forEach((e) => {
+                document.getElementById(qid + ":" + e).classList.remove('active');
+            });
+
+            // Remove border
+            document.getElementById(qid).classList.remove('border', 'border-4', 'border-success', 'border-danger');
+        }
+
+</script>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; GATE ComputerScience 2022</div>
+                </div>
+                <!-- <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core theme JS-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous">
+    </script>
+    
+    <!-- TODO: Optionally include file -->
+    <script src="/assets/js/question_checker.js"></script>
+    
+
+</body>
+
+</html>

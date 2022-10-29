@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>
+
+        
+        Terminologies | 
+        
+        GATE ComputerScience
+
+    </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Katex -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                // • rendering keys, e.g.:
+                throwOnError : false
+            });
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6MX42SZR4F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6MX42SZR4F');
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a class="navbar-brand" href="/">GATE ComputerScience</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                        <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
+                        <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                        <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                        <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <section class="py-4">
+    <div class="container px-4 my-5" style="max-width: 1200px;">
+        <div class="row gx-5">
+            <div class="col-lg-3">
+
+                
+<!-- Topics -->
+<div class="card mb-4 shadow-sm mb-5 bg-body border-0">
+    <div class="card-body bg-light rounded bg-dark">
+        <ul class="list-unstyled mb-0 text-end">
+            
+            
+            
+            
+            
+            <li class="p-2"><a href="/learn/computer-organization-and-architecture" class="text-white">Computer Organization and Architecture</a></li>
+            
+            
+            
+            
+            
+            
+            <li class="p-2"><a href="/learn/computer-organization-and-architecture/terminologies.html" class="text-white">Terminologies</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+                
+                <!-- Author Name -->
+                <!-- <div class="d-flex align-items-center mt-lg-5 mb-4">
+                    <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                        alt="..." />
+                    <div class="ms-3">
+                        <div class="fw-bold">Valerie Luna</div>
+                        <div class="text-muted">News, Business</div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="col-lg-9 rounded shadow p-3 mb-5 rounded" style="padding-top: 32px;">
+                <article>
+    <header class="mb-4">
+        <h1 class="fw-bolder mb-1">Terminologies</h1>
+
+        
+    </header>
+    
+    <section class="mb-5" id="post-content">
+        <h1 id="system-bus">System Bus</h1>
+
+<p>System bus is used in our computer to connect all the different parts (like memory, CPU, IO).
+System bus is composed of three sub buses:</p>
+<ul>
+  <li><strong>Data bus:</strong>
+    <ul>
+      <li>Data bus is biderectional.</li>
+    </ul>
+  </li>
+  <li><strong>Address bus:</strong>
+    <ul>
+      <li>Address bus is unidirectional (from CPU to other components)</li>
+    </ul>
+  </li>
+  <li><strong>Control bus:</strong>
+    <ul>
+      <li>Control bus is not just a single bus.</li>
+      <li>There are multiple small buses are gone from CPU to all the devices which CPU controls.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="cpu-registers">CPU Registers</h1>
+
+<p>Registers are a small memory devices present inside CPU core.</p>
+
+<p>These are the fastest form of memory (faster than cache), and nearest to the CPU.</p>
+
+<p>We can devide the resigisters in two broad categories:</p>
+<ul>
+  <li><strong>General Purpose Registers</strong>
+    <ul>
+      <li>These registers can be use for general purpose work (like as a temporary storage in arithmetic operations).</li>
+    </ul>
+  </li>
+  <li><strong>Special Purpose Registers</strong>
+    <ul>
+      <li>Some examples of special purpose registers are:</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Let’s understand some of the <strong>special purpose</strong> registers.</p>
+
+<h3 id="accumulator-ac">Accumulator (AC)</h3>
+
+<ul>
+  <li>Used to store the result of ALU or sometimes to store one of the oprand.</li>
+  <li>Some architectures where AC is used as input to ALU
+    <ul>
+      <li>AC based arhitecture.</li>
+      <li>Register based architecture.</li>
+      <li>Register-memory based architecture.</li>
+      <li>Complex system architecture</li>
+      <li>Stack based architecture.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="program-counter-pc">Program counter (PC)</h3>
+
+<p>Stores addres of next instruction to be executed.</p>
+
+<h3 id="instruction-register-ir">Instruction register (IR)</h3>
+
+<p>Stores the instruction to be executed.</p>
+
+<h3 id="stack-pointer-sp">Stack pointer (SP)</h3>
+
+<ul>
+  <li>Every process has stack part.</li>
+  <li>This register has address of the top element on that stack.</li>
+</ul>
+
+<h3 id="flag-register--program-status-word-psw">Flag register / Program status word (PSW)</h3>
+
+<ul>
+  <li>Stores the status of the ALU result.</li>
+  <li>Status like if result is zero, if it has generated carry or not, sign of the result etc.</li>
+  <li>Used to implement conditional execution.</li>
+</ul>
+
+<h3 id="memory-address-register-mar">Memory address register (MAR)</h3>
+
+<p>Used to send transfer address from CPU to memory, in situations when CPU wants to read of write data to that memory address.</p>
+
+<h3 id="memory-databuffer-register-mdrmbr">Memory data/buffer register (MDR/MBR)</h3>
+
+<p>Used to send the data to the memory and to recieve data from the memory.</p>
+
+<h1 id="memory-cell-size">Memory Cell Size</h1>
+
+<p>A memory can be byte addressable or word addressable.</p>
+
+<p class="note">If in questions addressing type os not mentioned; assume byte addresable by default.</p>
+
+<ul>
+  <li><strong>Byte Addressable:</strong> In this mechanism; we can store 1 byte at a one address.</li>
+  <li><strong>Word Addressable:</strong>
+    <ul>
+      <li>In this mechanism; we can store 1 word at a one address.</li>
+      <li>Word size is not fixed, it can be anything (2 bytes, 4 bytes etc.).</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="micro-operations">Micro Operations</h1>
+
+<ul>
+  <li>This are the operations can performed on the CPU registers, example <code class="language-plaintext highlighter-rouge">R1 &lt;- R2</code></li>
+  <li>Symbolic notation to describe the micro operation is <em>Register Transfer Language.</em></li>
+  <li>Micro operations are small operations which are part of a larger operation we’ve mentioned in opcide part of instruction.</li>
+  <li><strong>Minimum time needed to perform 1 micro operation is called 1 CPU cycle time.</strong>
+    <ul>
+      <li>One micro operation can take more than one CPU cycle also, but minimum is 1 CPU cycle.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="rtl">RTL</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Register transfer</td>
+      <td><code class="language-plaintext highlighter-rouge">R1 &lt;- R2</code></td>
+      <td>Move data from <code class="language-plaintext highlighter-rouge">R2</code> to <code class="language-plaintext highlighter-rouge">R1</code>. <br /> R2 remains as it is, <br />R1 is updated.</td>
+    </tr>
+    <tr>
+      <td>Comma</td>
+      <td><code class="language-plaintext highlighter-rouge">R2 &lt;- R1, PC &lt;- PC + 1</code></td>
+      <td>Sometimes tw0 micro operations can be done simultaneously. These two micro operations are saperated by comma.</td>
+    </tr>
+    <tr>
+      <td>Memory transfer<br />(Memory read)</td>
+      <td><code class="language-plaintext highlighter-rouge">R &lt;- M[1000]</code>,<br /><code class="language-plaintext highlighter-rouge">R &lt;- M[MAR]</code></td>
+      <td>Get data from memory to CPU.</td>
+    </tr>
+    <tr>
+      <td>Memory transfer<br />(Memory write)</td>
+      <td><code class="language-plaintext highlighter-rouge">R -&gt; M[1000]</code>,<br /><code class="language-plaintext highlighter-rouge">R -&gt; M[MAR]</code></td>
+      <td>Store data from CPU to memory.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    </section>
+</article>
+
+<!-- Comments section-->
+<!-- <section>
+    <div class="card bg-light">
+        <div class="card-body">
+            <form class="mb-4"><textarea class="form-control" rows="3"
+                    placeholder="Join the discussion and leave a comment!"></textarea></form>
+            <div class="d-flex mb-4">
+                <div class="flex-shrink-0"><img class="rounded-circle"
+                        src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                <div class="ms-3">
+                    <div class="fw-bold">Commenter Name</div>
+                    If you're going to lead a space frontier, it has to be government; it'll never be private
+                    enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified
+                    risks.
+                    <div class="d-flex mt-4">
+                        <div class="flex-shrink-0"><img class="rounded-circle"
+                                src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                        <div class="ms-3">
+                            <div class="fw-bold">Commenter Name</div>
+                            And under those conditions, you cannot establish a capital-market evaluation of that
+                            enterprise. You can't get investors.
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="flex-shrink-0"><img class="rounded-circle"
+                                src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                        <div class="ms-3">
+                            <div class="fw-bold">Commenter Name</div>
+                            When you put money directly to a problem, it makes a good headline.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="flex-shrink-0"><img class="rounded-circle"
+                        src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                <div class="ms-3">
+                    <div class="fw-bold">Commenter Name</div>
+                    When I look at the universe and all the ways the universe wants to kill us, I find it hard to
+                    reconcile that with statements of beneficence.
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; GATE ComputerScience 2022</div>
+                </div>
+                <!-- <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core theme JS-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous">
+    </script>
+    
+    <!-- TODO: Optionally include file -->
+    <script src="/assets/js/question_checker.js"></script>
+    
+
+</body>
+
+</html>
